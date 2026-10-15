@@ -1,0 +1,48 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.keepassxc.KeePassXC",
+  "name": "KeePassXC",
+  "summary": "Cross-platform password manager",
+  "developer": "KeePassXC team",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://keepassxc.org",
+  "source_code": "https://github.com/keepassxreboot/keepassxc",
+  "topics": [
+    "security"
+  ],
+  "tags": [
+    "passwords",
+    "kdbx"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "keepassxreboot/keepassxc",
+        "asset": "^KeePassXC-[0-9.]+-x86_64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.keepassxc.KeePassXC"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "KeePassXCTeam.KeePassXC"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "keepassxc",
+      "cask": true
+    }
+  ]
+}

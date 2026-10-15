@@ -1,0 +1,39 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.qgis.qgis",
+  "name": "QGIS",
+  "summary": "Create, edit, analyse and publish geospatial information",
+  "developer": "QGIS project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://qgis.org",
+  "source_code": "https://github.com/qgis/QGIS",
+  "topics": [
+    "gis",
+    "science"
+  ],
+  "tags": [
+    "maps",
+    "gis",
+    "shapefile",
+    "postgis"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.qgis.qgis"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "OSGeo.QGIS"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "qgis",
+      "cask": true
+    }
+  ]
+}

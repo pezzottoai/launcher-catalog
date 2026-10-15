@@ -1,0 +1,51 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "com.vscodium.codium",
+  "name": "VSCodium",
+  "summary": "Telemetry-free build of the VS Code editor",
+  "developer": "VSCodium",
+  "license": "MIT",
+  "homepage": "https://vscodium.com",
+  "source_code": "https://github.com/VSCodium/vscodium",
+  "topics": [
+    "development"
+  ],
+  "tags": [
+    "editor",
+    "ide",
+    "code"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "VSCodium/vscodium",
+        "asset": "^VSCodium-linux-x64-[0-9.]+\\.tar\\.gz$"
+      },
+      "strip_root": false,
+      "exec": "codium"
+    },
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "com.vscodium.codium"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "VSCodium.VSCodium"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "vscodium",
+      "cask": true
+    }
+  ]
+}

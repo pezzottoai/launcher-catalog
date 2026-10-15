@@ -1,0 +1,39 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.zotero.Zotero",
+  "name": "Zotero",
+  "summary": "Collect, organise, cite and share research",
+  "description": "Zotero collects, organises, cites and shares research sources.\n\nIt saves references and PDFs from the browser, keeps them in a searchable library, and inserts citations and bibliographies into word processors in thousands of citation styles.",
+  "developer": "Corporation for Digital Scholarship",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://www.zotero.org",
+  "source_code": "https://github.com/zotero/zotero",
+  "topics": [
+    "research",
+    "education"
+  ],
+  "tags": [
+    "citations",
+    "bibliography",
+    "references"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.zotero.Zotero"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "DigitalScholar.Zotero"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "zotero",
+      "cask": true
+    }
+  ]
+}

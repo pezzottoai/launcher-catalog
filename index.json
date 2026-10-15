@@ -1,0 +1,616 @@
+{
+ "schema_version": 1,
+ "generated": "2026-10-15T19:24:19Z",
+ "topics": [
+  {
+   "id": "graphics",
+   "name": "Graphics & Design",
+   "description": "Raster and vector drawing, photo editing, painting"
+  },
+  {
+   "id": "3d",
+   "name": "3D & CAD",
+   "description": "Modelling, animation, rendering, mechanical design"
+  },
+  {
+   "id": "office",
+   "name": "Office",
+   "description": "Documents, spreadsheets, presentations"
+  },
+  {
+   "id": "research",
+   "name": "Research",
+   "description": "References, notes, academic writing"
+  },
+  {
+   "id": "science",
+   "name": "Science",
+   "description": "Astronomy, mathematics, data analysis"
+  },
+  {
+   "id": "gis",
+   "name": "Maps & GIS",
+   "description": "Geographic information systems, mapping, OpenStreetMap"
+  },
+  {
+   "id": "audio-video",
+   "name": "Audio & Video",
+   "description": "Playback, recording, editing"
+  },
+  {
+   "id": "security",
+   "name": "Security & Privacy",
+   "description": "Passwords, encryption"
+  },
+  {
+   "id": "development",
+   "name": "Development",
+   "description": "Editors and tools for programmers"
+  },
+  {
+   "id": "education",
+   "name": "Education",
+   "description": "Learning and teaching tools"
+  }
+ ],
+ "apps": [
+  {
+   "schema_version": 1,
+   "id": "org.audacityteam.Audacity",
+   "name": "Audacity",
+   "summary": "Record and edit audio",
+   "developer": "Audacity team",
+   "license": "GPL-3.0-or-later",
+   "homepage": "https://www.audacityteam.org",
+   "source_code": "https://github.com/audacity/audacity",
+   "topics": [
+    "audio-video"
+   ],
+   "tags": [
+    "audio",
+    "recording",
+    "podcast"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.audacityteam.Audacity"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "Audacity.Audacity"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "audacity",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/audacityteam/Audacity/0ad4a24524b6c06220649dc83a08ae81/icons/128x128/org.audacityteam.Audacity.png",
+   "description": "Audacity is the world's most popular audio editing and recording app.\n\nYou can use Audacity to:\n• Record live audio\n• Convert tapes and records into digital recordings or CDs\n• Edit WAV, AIFF, FLAC, MP2, MP3 or Ogg Vorbis sound files\n• Cut, copy, splice or mix sounds together\n• Change the speed or pitch of a recording\n• Apply a wide range of other effects to audio recordings\n• and much more!"
+  },
+  {
+   "schema_version": 1,
+   "id": "org.blender.Blender",
+   "name": "Blender",
+   "summary": "3D creation suite: modelling, animation, rendering, video editing",
+   "developer": "Blender Foundation",
+   "license": "GPL-3.0-or-later",
+   "homepage": "https://www.blender.org",
+   "source_code": "https://projects.blender.org/blender/blender",
+   "topics": [
+    "3d",
+    "graphics"
+   ],
+   "tags": [
+    "3d",
+    "animation",
+    "render"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.blender.Blender"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "BlenderFoundation.Blender"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "blender",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/blender/Blender/c6b07403115901571923d99f1b725b0e/icons/128x128/org.blender.Blender.png",
+   "description": "Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline — modeling, rigging, animation, simulation, rendering, compositing, motion tracking, and video editing.\n\nBlender is a public project, made by hundreds of people from around the world; by studios and individual artists, professionals and hobbyists, scientists, students, VFX experts, animators, game artists, modders, and the list goes on."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.freecad.FreeCAD",
+   "name": "FreeCAD",
+   "summary": "Parametric 3D modeller for mechanical engineering and product design",
+   "developer": "FreeCAD project",
+   "license": "LGPL-2.0-or-later",
+   "homepage": "https://www.freecad.org",
+   "source_code": "https://github.com/FreeCAD/FreeCAD",
+   "topics": [
+    "3d"
+   ],
+   "tags": [
+    "cad",
+    "engineering",
+    "bim"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.freecad.FreeCAD"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "FreeCAD.FreeCAD"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "freecad",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/freecad/FreeCAD/147bb7390e51b88c0e4e7c461019b230/icons/128x128/org.freecad.FreeCAD.png",
+   "description": "FreeCAD is an open-source parametric 3D modeler built to help you design real-world objects of any size. With parametric modeling, you can easily modify your designs by adjusting parameters in the model history. FreeCAD is suitable for a wide range of uses, from product design and mechanical engineering to architecture and 3D printing.\n\nThe software allows you to create constrained 2D sketches, which can be used as the basis for more complex 3D models. It includes tools to adjust dimensions, extract design details, and produce production-ready technical drawings. FreeCAD is available on Windows, Mac, and Linux, and supports various file formats like STEP, IGES, STL, SVG, DXF, OBJ, IFC, and more, making it easy to fit into existing workflows. It also supports customization through Python scripting for those who want to automate tasks or develop custom features.\n\nFreeCAD offers several specialized workbenches, including tools for Finite Element Analysis (FEA), Building Information Modeling (BIM), CAM / CNC and robot movement simulation. You can expand its capabilities with add-ons, plugins, and macros created by the FreeCAD community, which can be installed directly from the application. This flexibility makes it a practical choice for both professionals and hobbyists."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.gimp.GIMP",
+   "name": "GIMP",
+   "summary": "GNU Image Manipulation Program",
+   "developer": "The GIMP team",
+   "license": "GPL-3.0-or-later",
+   "homepage": "https://www.gimp.org",
+   "source_code": "https://gitlab.gnome.org/GNOME/gimp",
+   "topics": [
+    "graphics"
+   ],
+   "tags": [
+    "photo",
+    "image",
+    "raster"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.gimp.GIMP"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "GIMP.GIMP.3"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "gimp",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/gimp/GIMP/95e6d7d59d33a0f9364535dbe023d807/icons/128x128/org.gimp.GIMP.png",
+   "description": "GIMP is an acronym for GNU Image Manipulation Program. It is Community-driven Free Software for high-end image creation and manipulation.\n\nIt has many capabilities. It can be used as a paint program, an expert quality photo retouching program, image composition, an online batch processing system, a mass production image renderer, an image format converter, etc.\n\nGIMP is expandable and extensible. It is designed to be augmented with plug-ins and extensions to do just about anything. The advanced scripting interface allows everything from the simplest task to the most complex image manipulation procedures to be easily scripted. GIMP is available for Linux, Microsoft Windows and macOS."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.inkscape.Inkscape",
+   "name": "Inkscape",
+   "summary": "Professional vector graphics editor",
+   "developer": "Inkscape project",
+   "license": "GPL-3.0-or-later",
+   "homepage": "https://inkscape.org",
+   "source_code": "https://gitlab.com/inkscape/inkscape",
+   "topics": [
+    "graphics"
+   ],
+   "tags": [
+    "svg",
+    "vector",
+    "illustration"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.inkscape.Inkscape"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "Inkscape.Inkscape"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "inkscape",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/inkscape/Inkscape/d06b79da7ad6df73032683fbcf8c4d56/icons/128x128/org.inkscape.Inkscape.png",
+   "description": "A Free and open source vector graphics editor. It offers a rich set of features and is widely used for both artistic and technical illustrations such as cartoons, clip art, logos, typography, diagramming and flowcharting.\n\nIt uses vector graphics to allow for sharp printouts and renderings at unlimited resolution and is not bound to a fixed number of pixels like raster graphics. Inkscape uses the standardized SVG file format as its main format, which is supported by many other applications including web browsers.\n\nInkscape supports many advanced SVG features (markers, clones, alpha blending, etc.) and great care is taken in designing a streamlined interface. It is very easy to edit nodes, perform complex path operations, trace bitmaps and much more. We also aim to maintain a thriving user and developer community by using open, community-oriented development."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.openstreetmap.josm",
+   "name": "JOSM",
+   "summary": "Extensible editor for OpenStreetMap",
+   "developer": "JOSM developers",
+   "license": "GPL-2.0-or-later",
+   "homepage": "https://josm.openstreetmap.de",
+   "source_code": "https://josm.openstreetmap.de/browser/josm/trunk",
+   "topics": [
+    "gis"
+   ],
+   "tags": [
+    "osm",
+    "openstreetmap",
+    "mapping"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.openstreetmap.josm"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "josm",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/openstreetmap/josm/dbfdd586e270080b7e44f79fad5a44c5/icons/128x128/org.openstreetmap.josm.png",
+   "description": "JOSM is an extensible off-line editor for ​OpenStreetMap (OSM) written in ​Java.\n\nIt supports loading stand-alone GPX tracks and GPX track data from the OSM database as well as loading and editing existing nodes, ways, metadata tags and relations from the OSM database."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.keepassxc.KeePassXC",
+   "name": "KeePassXC",
+   "summary": "Cross-platform password manager",
+   "developer": "KeePassXC team",
+   "license": "GPL-3.0-or-later",
+   "homepage": "https://keepassxc.org",
+   "source_code": "https://github.com/keepassxreboot/keepassxc",
+   "topics": [
+    "security"
+   ],
+   "tags": [
+    "passwords",
+    "kdbx"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "keepassxreboot/keepassxc",
+      "asset": "^KeePassXC-[0-9.]+-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.keepassxc.KeePassXC"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "KeePassXCTeam.KeePassXC"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "keepassxc",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/keepassxc/KeePassXC.desktop/4c36ed73b0a57050b7fda2be02da09f1/icons/128x128/org.keepassxc.KeePassXC.desktop.png",
+   "description": "KeePassXC is a modern, secure, and open-source password manager for your most sensitive information. Designed for people with extremely high demands of secure personal data management. You can store many different types of information, such as usernames, passwords, URLs, attachments, and notes in an offline, encrypted file. Major features include: Auto-Type into any window, browser integration, password generator, advanced search, comprehensive reports, FDO Secret Service integration, SSH agent key management, and many more!"
+  },
+  {
+   "schema_version": 1,
+   "id": "org.kde.krita",
+   "name": "Krita",
+   "summary": "Digital painting for artists",
+   "description": "Krita is a professional painting program made by artists who want affordable art tools for everyone.\n\nIt is used for concept art, texture and matte painting, illustrations and comics, with brush engines, layers, filters, animation and colour management.",
+   "developer": "KDE",
+   "license": "GPL-3.0-or-later",
+   "homepage": "https://krita.org",
+   "source_code": "https://invent.kde.org/graphics/krita",
+   "topics": [
+    "graphics"
+   ],
+   "tags": [
+    "painting",
+    "drawing",
+    "comics"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.kde.krita"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "KDE.Krita"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "krita",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/kde/krita/1348962dcc0842250c4ce6876acc36cc/icons/128x128/org.kde.krita.png"
+  },
+  {
+   "schema_version": 1,
+   "id": "org.libreoffice.LibreOffice",
+   "name": "LibreOffice",
+   "summary": "Office suite: documents, spreadsheets, presentations, drawings",
+   "developer": "The Document Foundation",
+   "license": "MPL-2.0",
+   "homepage": "https://www.libreoffice.org",
+   "source_code": "https://git.libreoffice.org/core",
+   "topics": [
+    "office"
+   ],
+   "tags": [
+    "word",
+    "excel",
+    "odf",
+    "docx"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.libreoffice.LibreOffice"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "TheDocumentFoundation.LibreOffice"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "libreoffice",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/libreoffice/LibreOffice/6a06e0ec2876ffc989b0e2a1340d3331/icons/128x128/org.libreoffice.LibreOffice.png",
+   "description": "LibreOffice is a powerful office suite. Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity. LibreOffice includes several applications that make it the most powerful Free and Open Source office suite on the market: Writer (word processing), Calc (spreadsheets), Impress (presentations), Draw (vector graphics and flowcharts), Base (databases), and Math (formula editing).\n\nLibreOffice supports opening and saving into a wide variety of formats, so you can easily share documents with users of other popular office suites without worrying about compatibility."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.qgis.qgis",
+   "name": "QGIS",
+   "summary": "Create, edit, analyse and publish geospatial information",
+   "developer": "QGIS project",
+   "license": "GPL-2.0-or-later",
+   "homepage": "https://qgis.org",
+   "source_code": "https://github.com/qgis/QGIS",
+   "topics": [
+    "gis",
+    "science"
+   ],
+   "tags": [
+    "maps",
+    "gis",
+    "shapefile",
+    "postgis"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.qgis.qgis"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "OSGeo.QGIS"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "qgis",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/qgis/qgis.desktop/0b22c32a5d57577b03b2a659adee9b8f/icons/128x128/org.qgis.qgis.desktop.png",
+   "description": "QGIS is a user friendly Open Source Geographic Information System (GIS) licensed under the GNU General Public License. QGIS is an official project of the Open Source Geospatial Foundation (OSGeo). It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous vector, raster, and database formats and functionalities."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.stellarium.Stellarium",
+   "name": "Stellarium",
+   "summary": "Planetarium: a realistic sky in 3D",
+   "developer": "Stellarium team",
+   "license": "GPL-2.0-or-later",
+   "homepage": "https://stellarium.org",
+   "source_code": "https://github.com/Stellarium/stellarium",
+   "topics": [
+    "science",
+    "education"
+   ],
+   "tags": [
+    "astronomy",
+    "stars",
+    "planetarium"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.stellarium.Stellarium"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "Stellarium.Stellarium"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "stellarium",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/stellarium/Stellarium/01c258ca3cbae8af957718005c6779ac/icons/128x128/org.stellarium.Stellarium.png",
+   "description": "Stellarium renders 3D photo-realistic skies in real time with OpenGL. It displays stars, constellations, planets and nebulae, and has many other features including multiple panoramic landscapes, fog, light pollution simulation and a built-in scripting engine.\n\nStellarium comes with a star catalogue of about 600 thousand stars and it is possible to download extra catalogues with up to 220 million stars.\n\nStellarium has multiple sky cultures - see the constellations from the traditions of Polynesian, Inuit, Navajo, Korean, Greek and Chinese astronomers, as well as the traditional Western or official modern constellations.\n\nIt is also possible to visit other planets in the solar system - see what the sky looked like to the Apollo astronauts, or what the rings of Saturn looks like from Titan."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.videolan.VLC",
+   "name": "VLC",
+   "summary": "Media player for most multimedia files and streams",
+   "developer": "VideoLAN",
+   "license": "GPL-2.0-or-later",
+   "homepage": "https://www.videolan.org/vlc/",
+   "source_code": "https://code.videolan.org/videolan/vlc",
+   "topics": [
+    "audio-video"
+   ],
+   "tags": [
+    "video",
+    "player",
+    "dvd"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.videolan.VLC"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "VideoLAN.VLC"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "vlc",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/videolan/VLC/34e7c2b6a026c5c290606225a84582d3/icons/128x128/org.videolan.VLC.png",
+   "description": "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols."
+  },
+  {
+   "schema_version": 1,
+   "id": "com.vscodium.codium",
+   "name": "VSCodium",
+   "summary": "Telemetry-free build of the VS Code editor",
+   "developer": "VSCodium",
+   "license": "MIT",
+   "homepage": "https://vscodium.com",
+   "source_code": "https://github.com/VSCodium/vscodium",
+   "topics": [
+    "development"
+   ],
+   "tags": [
+    "editor",
+    "ide",
+    "code"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "VSCodium/vscodium",
+      "asset": "^VSCodium-linux-x64-[0-9.]+\\.tar\\.gz$"
+     },
+     "strip_root": false,
+     "exec": "codium"
+    },
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "com.vscodium.codium"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "VSCodium.VSCodium"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "vscodium",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/com/vscodium/codium/3914e24c34d81b8def2d0e58deaefefd/icons/128x128/com.vscodium.codium.png",
+   "description": "VSCodium combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.\n\nThis is the telemetry-less version of Visual Studio Code, packaged into a Flatpak.\n\nThis repackaging is not supported by Microsoft.\n\nNote: To use certain features in this flatpak version, please see Readme file."
+  },
+  {
+   "schema_version": 1,
+   "id": "org.zotero.Zotero",
+   "name": "Zotero",
+   "summary": "Collect, organise, cite and share research",
+   "description": "Zotero collects, organises, cites and shares research sources.\n\nIt saves references and PDFs from the browser, keeps them in a searchable library, and inserts citations and bibliographies into word processors in thousands of citation styles.",
+   "developer": "Corporation for Digital Scholarship",
+   "license": "AGPL-3.0-only",
+   "homepage": "https://www.zotero.org",
+   "source_code": "https://github.com/zotero/zotero",
+   "topics": [
+    "research",
+    "education"
+   ],
+   "tags": [
+    "citations",
+    "bibliography",
+    "references"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "kind": "flatpak",
+     "ref": "org.zotero.Zotero"
+    },
+    {
+     "platform": "windows",
+     "kind": "winget",
+     "package": "DigitalScholar.Zotero"
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "zotero",
+     "cask": true
+    }
+   ],
+   "icon": "https://dl.flathub.org/media/org/zotero/Zotero/37fb6fc6ab034fd683cd59f4c4e7049e/icons/128x128/org.zotero.Zotero.png"
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.freecad.FreeCAD",
+  "name": "FreeCAD",
+  "summary": "Parametric 3D modeller for mechanical engineering and product design",
+  "developer": "FreeCAD project",
+  "license": "LGPL-2.0-or-later",
+  "homepage": "https://www.freecad.org",
+  "source_code": "https://github.com/FreeCAD/FreeCAD",
+  "topics": [
+    "3d"
+  ],
+  "tags": [
+    "cad",
+    "engineering",
+    "bim"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.freecad.FreeCAD"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "FreeCAD.FreeCAD"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "freecad",
+      "cask": true
+    }
+  ]
+}

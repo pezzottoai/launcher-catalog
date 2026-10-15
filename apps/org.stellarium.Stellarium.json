@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.stellarium.Stellarium",
+  "name": "Stellarium",
+  "summary": "Planetarium: a realistic sky in 3D",
+  "developer": "Stellarium team",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://stellarium.org",
+  "source_code": "https://github.com/Stellarium/stellarium",
+  "topics": [
+    "science",
+    "education"
+  ],
+  "tags": [
+    "astronomy",
+    "stars",
+    "planetarium"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.stellarium.Stellarium"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "Stellarium.Stellarium"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "stellarium",
+      "cask": true
+    }
+  ]
+}

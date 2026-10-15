@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.blender.Blender",
+  "name": "Blender",
+  "summary": "3D creation suite: modelling, animation, rendering, video editing",
+  "developer": "Blender Foundation",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://www.blender.org",
+  "source_code": "https://projects.blender.org/blender/blender",
+  "topics": [
+    "3d",
+    "graphics"
+  ],
+  "tags": [
+    "3d",
+    "animation",
+    "render"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.blender.Blender"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "BlenderFoundation.Blender"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "blender",
+      "cask": true
+    }
+  ]
+}

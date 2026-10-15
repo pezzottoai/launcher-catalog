@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "topics": [
+    { "id": "graphics", "name": "Graphics & Design", "description": "Raster and vector drawing, photo editing, painting" },
+    { "id": "3d", "name": "3D & CAD", "description": "Modelling, animation, rendering, mechanical design" },
+    { "id": "office", "name": "Office", "description": "Documents, spreadsheets, presentations" },
+    { "id": "research", "name": "Research", "description": "References, notes, academic writing" },
+    { "id": "science", "name": "Science", "description": "Astronomy, mathematics, data analysis" },
+    { "id": "gis", "name": "Maps & GIS", "description": "Geographic information systems, mapping, OpenStreetMap" },
+    { "id": "audio-video", "name": "Audio & Video", "description": "Playback, recording, editing" },
+    { "id": "security", "name": "Security & Privacy", "description": "Passwords, encryption" },
+    { "id": "development", "name": "Development", "description": "Editors and tools for programmers" },
+    { "id": "education", "name": "Education", "description": "Learning and teaching tools" }
+  ]
+}

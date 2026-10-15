@@ -1,0 +1,37 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.gimp.GIMP",
+  "name": "GIMP",
+  "summary": "GNU Image Manipulation Program",
+  "developer": "The GIMP team",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://www.gimp.org",
+  "source_code": "https://gitlab.gnome.org/GNOME/gimp",
+  "topics": [
+    "graphics"
+  ],
+  "tags": [
+    "photo",
+    "image",
+    "raster"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.gimp.GIMP"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "GIMP.GIMP.3"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "gimp",
+      "cask": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.kde.krita",
+  "name": "Krita",
+  "summary": "Digital painting for artists",
+  "description": "Krita is a professional painting program made by artists who want affordable art tools for everyone.\n\nIt is used for concept art, texture and matte painting, illustrations and comics, with brush engines, layers, filters, animation and colour management.",
+  "developer": "KDE",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://krita.org",
+  "source_code": "https://invent.kde.org/graphics/krita",
+  "topics": [
+    "graphics"
+  ],
+  "tags": [
+    "painting",
+    "drawing",
+    "comics"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.kde.krita"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "KDE.Krita"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "krita",
+      "cask": true
+    }
+  ]
+}

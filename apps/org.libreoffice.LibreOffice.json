@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.libreoffice.LibreOffice",
+  "name": "LibreOffice",
+  "summary": "Office suite: documents, spreadsheets, presentations, drawings",
+  "developer": "The Document Foundation",
+  "license": "MPL-2.0",
+  "homepage": "https://www.libreoffice.org",
+  "source_code": "https://git.libreoffice.org/core",
+  "topics": [
+    "office"
+  ],
+  "tags": [
+    "word",
+    "excel",
+    "odf",
+    "docx"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.libreoffice.LibreOffice"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "TheDocumentFoundation.LibreOffice"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "libreoffice",
+      "cask": true
+    }
+  ]
+}

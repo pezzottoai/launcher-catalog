@@ -1,0 +1,37 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.inkscape.Inkscape",
+  "name": "Inkscape",
+  "summary": "Professional vector graphics editor",
+  "developer": "Inkscape project",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://inkscape.org",
+  "source_code": "https://gitlab.com/inkscape/inkscape",
+  "topics": [
+    "graphics"
+  ],
+  "tags": [
+    "svg",
+    "vector",
+    "illustration"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.inkscape.Inkscape"
+    },
+    {
+      "platform": "windows",
+      "kind": "winget",
+      "package": "Inkscape.Inkscape"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "inkscape",
+      "cask": true
+    }
+  ]
+}

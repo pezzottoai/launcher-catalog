@@ -1,0 +1,32 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "org.openstreetmap.josm",
+  "name": "JOSM",
+  "summary": "Extensible editor for OpenStreetMap",
+  "developer": "JOSM developers",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://josm.openstreetmap.de",
+  "source_code": "https://josm.openstreetmap.de/browser/josm/trunk",
+  "topics": [
+    "gis"
+  ],
+  "tags": [
+    "osm",
+    "openstreetmap",
+    "mapping"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "kind": "flatpak",
+      "ref": "org.openstreetmap.josm"
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "josm",
+      "cask": true
+    }
+  ]
+}

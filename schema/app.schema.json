@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/sirmmo/fosslauncher-catalog/main/schema/app.schema.json",
+  "title": "FOSS Launcher application manifest",
+  "description": "One open-source application in the FOSS Launcher catalog. One file per app: apps/<id>.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "name", "summary", "license", "homepage", "source_code", "topics", "installers"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": 1 },
+    "id": {
+      "description": "Reverse-DNS identifier. Reuse the AppStream / Flathub id when the app has one. Must match the file name.",
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)+$"
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "summary": { "description": "One line, no trailing period.", "type": "string", "minLength": 1, "maxLength": 120 },
+    "description": { "description": "Plain text; blank lines separate paragraphs.", "type": "string" },
+    "developer": { "type": "string" },
+    "license": {
+      "description": "SPDX license expression, e.g. GPL-3.0-or-later or MIT OR Apache-2.0. Must be an OSI/FSF-approved license.",
+      "type": "string",
+      "minLength": 1
+    },
+    "homepage": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "source_code": { "description": "Public source repository.", "type": "string", "format": "uri", "pattern": "^https://" },
+    "icon": { "description": "Square PNG or SVG, ideally at least 128px.", "type": "string", "format": "uri", "pattern": "^https://" },
+    "screenshots": { "type": "array", "items": { "type": "string", "format": "uri", "pattern": "^https://" } },
+    "topics": {
+      "description": "Ids from topics.json. The first one is the primary topic.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
+    "tags": { "description": "Free-form search keywords.", "type": "array", "items": { "type": "string" } },
+    "installers": {
+      "description": "Ways to install the app, in order of preference. The launcher picks the first one that matches the current platform/arch and whose tool is available.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/installer" }
+    }
+  },
+  "$defs": {
+    "platform": { "enum": ["linux", "windows", "macos"] },
+    "arch": { "enum": ["x86_64", "aarch64"] },
+    "run": {
+      "description": "Command used to launch the installed app (argv). {dir} expands to the install directory for 'download' installers.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "installer": {
+      "type": "object",
+      "required": ["platform", "kind"],
+      "properties": {
+        "platform": { "$ref": "#/$defs/platform" },
+        "arch": { "description": "Omit when any architecture works.", "type": "array", "items": { "$ref": "#/$defs/arch" } },
+        "kind": { "enum": ["flatpak", "winget", "homebrew", "download"] },
+        "run": { "$ref": "#/$defs/run" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "flatpak" } } },
+          "then": {
+            "required": ["ref"],
+            "properties": {
+              "platform": { "const": "linux" },
+              "ref": { "description": "Flatpak application id.", "type": "string" },
+              "remote": { "description": "Defaults to flathub.", "type": "string" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "winget" } } },
+          "then": {
+            "required": ["package"],
+            "properties": { "platform": { "const": "windows" }, "package": { "description": "winget package id.", "type": "string" } }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "homebrew" } } },
+          "then": {
+            "required": ["package"],
+            "properties": {
+              "package": { "type": "string" },
+              "cask": { "description": "true for a cask (GUI app), false for a formula. Defaults to true.", "type": "boolean" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "download" } } },
+          "then": {
+            "required": ["format"],
+            "oneOf": [{ "required": ["url"] }, { "required": ["github"] }],
+            "properties": {
+              "format": {
+                "description": "appimage: single executable file. archive: .zip or .tar.gz extracted into the app directory. binary: single executable. installer: native installer (.msi, .exe, .dmg, .pkg, .deb) handed to the OS.",
+                "enum": ["appimage", "archive", "binary", "installer"]
+              },
+              "url": { "description": "Pinned download URL.", "type": "string", "format": "uri", "pattern": "^https://" },
+              "sha256": { "description": "Required with a pinned url.", "type": "string", "pattern": "^[0-9a-f]{64}$" },
+              "version": { "type": "string" },
+              "github": {
+                "description": "Resolve the latest GitHub release at install time.",
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["repo", "asset"],
+                "properties": {
+                  "repo": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+                  "asset": { "description": "Regular expression matched against release asset names.", "type": "string" }
+                }
+              },
+              "exec": { "description": "archive only: path of the executable inside the extracted directory.", "type": "string" },
+              "strip_root": { "description": "archive only: drop a single top-level directory. Defaults to true.", "type": "boolean" }
+            },
+            "dependentRequired": { "url": ["sha256"] }
+          }
+        }
+      ]
+    }
+  }
+}
