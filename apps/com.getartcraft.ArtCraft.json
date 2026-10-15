@@ -1,0 +1,46 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "com.getartcraft.ArtCraft",
+  "name": "ArtCraft",
+  "summary": "IDE for interactive AI image and video creation",
+  "description": "ArtCraft is the IDE for interactive AI image and video creation. Compose in 2D, stage scenes in 3D, and choose the models that fit your work.\n\nIt adds visual tools for composition, character posing, camera placement and 3D scene blocking before generating the final shot.",
+  "developer": "ArtCraft",
+  "license": "MIT OR Apache-2.0",
+  "homepage": "https://getartcraft.com",
+  "source_code": "https://github.com/storytold/artcraft",
+  "icon": "https://raw.githubusercontent.com/storytold/artcraft/main/crates/desktop/artcraft/icons/128x128@2x.png",
+  "topics": [
+    "graphics",
+    "audio-video"
+  ],
+  "tags": [
+    "artcraft",
+    "film",
+    "ai",
+    "3d"
+  ],
+  "installers": [
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/artcraft",
+        "asset": "^ArtCraft_[0-9.]+_x64-setup\\.exe$"
+      }
+    },
+    {
+      "platform": "macos",
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/artcraft",
+        "asset": "^ArtCraft_[0-9.]+_universal\\.dmg$"
+      }
+    }
+  ]
+}

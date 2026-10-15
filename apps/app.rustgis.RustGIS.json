@@ -1,0 +1,111 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "app.rustgis.RustGIS",
+  "name": "RustGIS",
+  "summary": "Fast, free and open-source GIS",
+  "description": "RustGIS is a fast, free and open-source GIS written in pure Rust. It comes with a plugin system and a command-line tool.",
+  "developer": "Open Geospatial Solutions",
+  "license": "Apache-2.0",
+  "homepage": "https://rustgis.app",
+  "source_code": "https://github.com/opengeos/RustGIS",
+  "icon": "https://assets.rustgis.app/images/favicon.png",
+  "topics": [
+    "gis",
+    "science"
+  ],
+  "tags": [
+    "maps",
+    "gis",
+    "geospatial",
+    "raster",
+    "vector",
+    "rust"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "opengeos/RustGIS",
+        "asset": "^RustGIS-[0-9.]+-linux-x86_64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "linux",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "opengeos/RustGIS",
+        "asset": "^RustGIS-[0-9.]+-linux-aarch64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "opengeos/RustGIS",
+        "asset": "^RustGIS-[0-9.]+-windows-x86_64-portable\\.zip$"
+      },
+      "exec": "rustgis.exe"
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "opengeos/RustGIS",
+        "asset": "^RustGIS-[0-9.]+-windows-x86_64\\.msi$"
+      }
+    },
+    {
+      "platform": "macos",
+      "kind": "homebrew",
+      "package": "opengeos/rustgis/rustgis",
+      "cask": true,
+      "run": [
+        "open",
+        "-a",
+        "RustGIS"
+      ]
+    },
+    {
+      "platform": "macos",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "opengeos/RustGIS",
+        "asset": "^RustGIS-[0-9.]+-macos-aarch64\\.dmg$"
+      }
+    },
+    {
+      "platform": "macos",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "opengeos/RustGIS",
+        "asset": "^RustGIS-[0-9.]+-macos-x86_64\\.dmg$"
+      }
+    }
+  ]
+}

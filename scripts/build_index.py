@@ -91,7 +91,13 @@ def remote_checks(app):
                 errs.append(f"{where}: winget package {pkg} not in winget-pkgs")
         elif kind == "homebrew":
             what = "cask" if inst.get("cask", True) else "formula"
-            ok, _ = http_ok(f"https://formulae.brew.sh/api/{what}/{inst['package']}.json")
+            parts = inst["package"].split("/")
+            if len(parts) == 3:  # third-party tap: user/tap/name -> github.com/user/homebrew-tap
+                user, tap, name = parts
+                folder = "Casks" if what == "cask" else "Formula"
+                ok, _ = http_ok(f"https://api.github.com/repos/{user}/homebrew-{tap}/contents/{folder}/{name}.rb")
+            else:
+                ok, _ = http_ok(f"https://formulae.brew.sh/api/{what}/{inst['package']}.json")
             if not ok:
                 errs.append(f"{where}: homebrew {what} {inst['package']} not found")
         elif kind == "download" and "github" in inst:

@@ -1,0 +1,97 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "com.getartcraft.DesignCraft",
+  "name": "DesignCraft",
+  "summary": "Page layout and desktop publishing",
+  "description": "DesignCraft is an open-source page and layout design editor written from scratch in pure Rust, for print and digital publishing.\n\nPart of the ArtCraft crafting apps.",
+  "developer": "ArtCraft",
+  "license": "MIT OR Apache-2.0",
+  "homepage": "https://getartcraft.com/apps/designcraft",
+  "source_code": "https://github.com/storytold/designcraft",
+  "icon": "https://getartcraft.com/images/apps/designcraft/icon.webp",
+  "topics": [
+    "graphics",
+    "office"
+  ],
+  "tags": [
+    "artcraft",
+    "layout",
+    "publishing",
+    "print",
+    "rust"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "storytold/designcraft",
+        "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "linux",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "storytold/designcraft",
+        "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "storytold/designcraft",
+        "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+      },
+      "exec": "designcraft.exe"
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "storytold/designcraft",
+        "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+      },
+      "exec": "designcraft.exe"
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/designcraft",
+        "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+      }
+    },
+    {
+      "platform": "macos",
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/designcraft",
+        "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+      }
+    }
+  ]
+}

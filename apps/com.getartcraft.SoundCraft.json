@@ -1,0 +1,96 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "com.getartcraft.SoundCraft",
+  "name": "SoundCraft",
+  "summary": "Audio recording, editing and mixing (DAW)",
+  "description": "SoundCraft is an open-source, clean-room digital audio workstation in pure Rust for recording, editing and mixing.\n\nPart of the ArtCraft crafting apps.",
+  "developer": "ArtCraft",
+  "license": "MIT OR Apache-2.0",
+  "homepage": "https://getartcraft.com/apps/soundcraft",
+  "source_code": "https://github.com/storytold/soundcraft",
+  "icon": "https://getartcraft.com/images/apps/soundcraft/icon.webp",
+  "topics": [
+    "audio-video"
+  ],
+  "tags": [
+    "artcraft",
+    "audio",
+    "daw",
+    "music",
+    "rust"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "storytold/soundcraft",
+        "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "linux",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "storytold/soundcraft",
+        "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "storytold/soundcraft",
+        "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+      },
+      "exec": "soundcraft.exe"
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "storytold/soundcraft",
+        "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+      },
+      "exec": "soundcraft.exe"
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/soundcraft",
+        "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+      }
+    },
+    {
+      "platform": "macos",
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/soundcraft",
+        "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+      }
+    }
+  ]
+}

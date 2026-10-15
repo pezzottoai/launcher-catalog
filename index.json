@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated": "2026-10-15T19:24:19Z",
+ "generated": "2026-10-15T20:21:41Z",
  "topics": [
   {
    "id": "graphics",
@@ -51,9 +51,152 @@
    "id": "education",
    "name": "Education",
    "description": "Learning and teaching tools"
+  },
+  {
+   "id": "utilities",
+   "name": "Utilities",
+   "description": "Launchers, app stores and system tools"
   }
  ],
  "apps": [
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.ArtCraft",
+   "name": "ArtCraft",
+   "summary": "IDE for interactive AI image and video creation",
+   "description": "ArtCraft is the IDE for interactive AI image and video creation. Compose in 2D, stage scenes in 3D, and choose the models that fit your work.\n\nIt adds visual tools for composition, character posing, camera placement and 3D scene blocking before generating the final shot.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com",
+   "source_code": "https://github.com/storytold/artcraft",
+   "icon": "https://raw.githubusercontent.com/storytold/artcraft/main/crates/desktop/artcraft/icons/128x128@2x.png",
+   "topics": [
+    "graphics",
+    "audio-video"
+   ],
+   "tags": [
+    "artcraft",
+    "film",
+    "ai",
+    "3d"
+   ],
+   "installers": [
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/artcraft",
+      "asset": "^ArtCraft_[0-9.]+_x64-setup\\.exe$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/artcraft",
+      "asset": "^ArtCraft_[0-9.]+_universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.ArtCraftLauncher",
+   "name": "ArtCraft Launcher",
+   "summary": "Installs every ArtCraft app and keeps them up to date",
+   "description": "The ArtCraft Launcher installs, updates and launches all the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps",
+   "source_code": "https://github.com/storytold/craft-launcher",
+   "icon": "https://raw.githubusercontent.com/storytold/craft-launcher/main/assets/app-icon/artcraft-launcher-1024.png",
+   "topics": [
+    "utilities"
+   ],
+   "tags": [
+    "artcraft",
+    "launcher",
+    "updater"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/craft-launcher",
+      "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/craft-launcher",
+      "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/craft-launcher",
+      "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "artcraft-launcher.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/craft-launcher",
+      "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "artcraft-launcher.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/craft-launcher",
+      "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/craft-launcher",
+      "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
   {
    "schema_version": 1,
    "id": "org.audacityteam.Audacity",
@@ -133,6 +276,579 @@
   },
   {
    "schema_version": 1,
+   "id": "com.getartcraft.CADCraft",
+   "name": "CADCraft",
+   "summary": "Computer-aided design and drafting",
+   "description": "CADCraft is an open-source, clean-room CAD and drafting application in pure Rust, in the style of AutoCAD.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/cadcraft",
+   "source_code": "https://github.com/storytold/cadcraft",
+   "icon": "https://getartcraft.com/images/apps/cadcraft/icon.webp",
+   "topics": [
+    "3d"
+   ],
+   "tags": [
+    "artcraft",
+    "cad",
+    "drafting",
+    "dwg",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/cadcraft",
+      "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/cadcraft",
+      "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/cadcraft",
+      "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "cadcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/cadcraft",
+      "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "cadcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/cadcraft",
+      "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/cadcraft",
+      "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.DeckCraft",
+   "name": "DeckCraft",
+   "summary": "Presentations and slide shows",
+   "description": "DeckCraft is an open-source, clean-room presentation app in pure Rust, in the style of Microsoft PowerPoint.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/deckcraft",
+   "source_code": "https://github.com/storytold/deckcraft",
+   "icon": "https://getartcraft.com/images/apps/deckcraft/icon.webp",
+   "topics": [
+    "office"
+   ],
+   "tags": [
+    "artcraft",
+    "slides",
+    "presentation",
+    "pptx",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/deckcraft",
+      "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/deckcraft",
+      "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/deckcraft",
+      "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "deckcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/deckcraft",
+      "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "deckcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/deckcraft",
+      "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/deckcraft",
+      "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.DesignCraft",
+   "name": "DesignCraft",
+   "summary": "Page layout and desktop publishing",
+   "description": "DesignCraft is an open-source page and layout design editor written from scratch in pure Rust, for print and digital publishing.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/designcraft",
+   "source_code": "https://github.com/storytold/designcraft",
+   "icon": "https://getartcraft.com/images/apps/designcraft/icon.webp",
+   "topics": [
+    "graphics",
+    "office"
+   ],
+   "tags": [
+    "artcraft",
+    "layout",
+    "publishing",
+    "print",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/designcraft",
+      "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/designcraft",
+      "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/designcraft",
+      "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "designcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/designcraft",
+      "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "designcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/designcraft",
+      "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/designcraft",
+      "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.EffectCraft",
+   "name": "EffectCraft",
+   "summary": "Motion graphics, compositing and VFX",
+   "description": "EffectCraft is an open-source motion graphics and compositing tool written from scratch in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/effectcraft",
+   "source_code": "https://github.com/storytold/effectcraft",
+   "icon": "https://getartcraft.com/images/apps/effectcraft/icon.webp",
+   "topics": [
+    "audio-video",
+    "graphics"
+   ],
+   "tags": [
+    "artcraft",
+    "vfx",
+    "motion graphics",
+    "compositing",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/effectcraft",
+      "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/effectcraft",
+      "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/effectcraft",
+      "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "effectcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/effectcraft",
+      "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "effectcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/effectcraft",
+      "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/effectcraft",
+      "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.FigCraft",
+   "name": "FigCraft",
+   "summary": "Interface design and prototyping",
+   "description": "FigCraft is an open-source, clean-room tool for interface design and interactive prototyping, written in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/figcraft",
+   "source_code": "https://github.com/storytold/figcraft",
+   "icon": "https://getartcraft.com/images/apps/figcraft/icon.webp",
+   "topics": [
+    "graphics",
+    "development"
+   ],
+   "tags": [
+    "artcraft",
+    "ui",
+    "ux",
+    "prototype",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/figcraft",
+      "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/figcraft",
+      "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/figcraft",
+      "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "figcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/figcraft",
+      "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "figcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/figcraft",
+      "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/figcraft",
+      "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.FilmCraft",
+   "name": "FilmCraft",
+   "summary": "Nonlinear video editor",
+   "description": "FilmCraft is an open-source nonlinear video editor written from scratch in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/filmcraft",
+   "source_code": "https://github.com/storytold/filmcraft",
+   "icon": "https://getartcraft.com/images/apps/filmcraft/icon.webp",
+   "topics": [
+    "audio-video"
+   ],
+   "tags": [
+    "artcraft",
+    "video",
+    "editing",
+    "nle",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/filmcraft",
+      "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/filmcraft",
+      "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/filmcraft",
+      "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "filmcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/filmcraft",
+      "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "filmcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/filmcraft",
+      "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/filmcraft",
+      "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
    "id": "org.freecad.FreeCAD",
    "name": "FreeCAD",
    "summary": "Parametric 3D modeller for mechanical engineering and product design",
@@ -206,6 +922,102 @@
    ],
    "icon": "https://dl.flathub.org/media/org/gimp/GIMP/95e6d7d59d33a0f9364535dbe023d807/icons/128x128/org.gimp.GIMP.png",
    "description": "GIMP is an acronym for GNU Image Manipulation Program. It is Community-driven Free Software for high-end image creation and manipulation.\n\nIt has many capabilities. It can be used as a paint program, an expert quality photo retouching program, image composition, an online batch processing system, a mass production image renderer, an image format converter, etc.\n\nGIMP is expandable and extensible. It is designed to be augmented with plug-ins and extensions to do just about anything. The advanced scripting interface allows everything from the simplest task to the most complex image manipulation procedures to be easily scripted. GIMP is available for Linux, Microsoft Windows and macOS."
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.GridCraft",
+   "name": "GridCraft",
+   "summary": "Spreadsheets and data analysis",
+   "description": "GridCraft is an open-source, clean-room spreadsheet in pure Rust, in the style of Microsoft Excel.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/gridcraft",
+   "source_code": "https://github.com/storytold/gridcraft",
+   "icon": "https://getartcraft.com/images/apps/gridcraft/icon.webp",
+   "topics": [
+    "office",
+    "science"
+   ],
+   "tags": [
+    "artcraft",
+    "spreadsheet",
+    "excel",
+    "xlsx",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/gridcraft",
+      "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/gridcraft",
+      "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/gridcraft",
+      "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "gridcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/gridcraft",
+      "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "gridcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/gridcraft",
+      "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/gridcraft",
+      "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
   },
   {
    "schema_version": 1,
@@ -406,6 +1218,290 @@
   },
   {
    "schema_version": 1,
+   "id": "com.getartcraft.LightCraft",
+   "name": "LightCraft",
+   "summary": "Photo library and non-destructive raw developer",
+   "description": "LightCraft is an open-source photo library and non-destructive raw photo developer written from scratch in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/lightcraft",
+   "source_code": "https://github.com/storytold/lightcraft",
+   "icon": "https://getartcraft.com/images/apps/lightcraft/icon.webp",
+   "topics": [
+    "graphics"
+   ],
+   "tags": [
+    "artcraft",
+    "photo",
+    "raw",
+    "catalog",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/lightcraft",
+      "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/lightcraft",
+      "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/lightcraft",
+      "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "lightcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/lightcraft",
+      "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "lightcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/lightcraft",
+      "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/lightcraft",
+      "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.PdfCraft",
+   "name": "PdfCraft",
+   "summary": "PDF reader, editor and workbench",
+   "description": "PdfCraft is an open-source PDF reader and editor written from scratch in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/pdfcraft",
+   "source_code": "https://github.com/storytold/pdfcraft",
+   "icon": "https://getartcraft.com/images/apps/pdfcraft/icon.webp",
+   "topics": [
+    "office"
+   ],
+   "tags": [
+    "artcraft",
+    "pdf",
+    "documents",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/pdfcraft",
+      "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/pdfcraft",
+      "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/pdfcraft",
+      "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "pdfcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/pdfcraft",
+      "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "pdfcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/pdfcraft",
+      "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/pdfcraft",
+      "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.PhotoCraft",
+   "name": "PhotoCraft",
+   "summary": "Image editor for photos and raster artwork",
+   "description": "PhotoCraft is an open-source photo and image editor written from scratch in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/photocraft",
+   "source_code": "https://github.com/storytold/photocraft",
+   "icon": "https://getartcraft.com/images/apps/photocraft/icon.webp",
+   "topics": [
+    "graphics"
+   ],
+   "tags": [
+    "artcraft",
+    "photo",
+    "image",
+    "raster",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/photocraft",
+      "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/photocraft",
+      "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/photocraft",
+      "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "photocraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/photocraft",
+      "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "photocraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/photocraft",
+      "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/photocraft",
+      "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
    "id": "org.qgis.qgis",
    "name": "QGIS",
    "summary": "Create, edit, analyse and publish geospatial information",
@@ -446,6 +1542,211 @@
   },
   {
    "schema_version": 1,
+   "id": "app.rustgis.RustGIS",
+   "name": "RustGIS",
+   "summary": "Fast, free and open-source GIS",
+   "description": "RustGIS is a fast, free and open-source GIS written in pure Rust. It comes with a plugin system and a command-line tool.",
+   "developer": "Open Geospatial Solutions",
+   "license": "Apache-2.0",
+   "homepage": "https://rustgis.app",
+   "source_code": "https://github.com/opengeos/RustGIS",
+   "icon": "https://assets.rustgis.app/images/favicon.png",
+   "topics": [
+    "gis",
+    "science"
+   ],
+   "tags": [
+    "maps",
+    "gis",
+    "geospatial",
+    "raster",
+    "vector",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "opengeos/RustGIS",
+      "asset": "^RustGIS-[0-9.]+-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "opengeos/RustGIS",
+      "asset": "^RustGIS-[0-9.]+-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "opengeos/RustGIS",
+      "asset": "^RustGIS-[0-9.]+-windows-x86_64-portable\\.zip$"
+     },
+     "exec": "rustgis.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "opengeos/RustGIS",
+      "asset": "^RustGIS-[0-9.]+-windows-x86_64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "homebrew",
+     "package": "opengeos/rustgis/rustgis",
+     "cask": true,
+     "run": [
+      "open",
+      "-a",
+      "RustGIS"
+     ]
+    },
+    {
+     "platform": "macos",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "opengeos/RustGIS",
+      "asset": "^RustGIS-[0-9.]+-macos-aarch64\\.dmg$"
+     }
+    },
+    {
+     "platform": "macos",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "opengeos/RustGIS",
+      "asset": "^RustGIS-[0-9.]+-macos-x86_64\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.SoundCraft",
+   "name": "SoundCraft",
+   "summary": "Audio recording, editing and mixing (DAW)",
+   "description": "SoundCraft is an open-source, clean-room digital audio workstation in pure Rust for recording, editing and mixing.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/soundcraft",
+   "source_code": "https://github.com/storytold/soundcraft",
+   "icon": "https://getartcraft.com/images/apps/soundcraft/icon.webp",
+   "topics": [
+    "audio-video"
+   ],
+   "tags": [
+    "artcraft",
+    "audio",
+    "daw",
+    "music",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/soundcraft",
+      "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/soundcraft",
+      "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/soundcraft",
+      "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "soundcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/soundcraft",
+      "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "soundcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/soundcraft",
+      "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/soundcraft",
+      "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
    "id": "org.stellarium.Stellarium",
    "name": "Stellarium",
    "summary": "Planetarium: a realistic sky in 3D",
@@ -482,6 +1783,101 @@
    ],
    "icon": "https://dl.flathub.org/media/org/stellarium/Stellarium/01c258ca3cbae8af957718005c6779ac/icons/128x128/org.stellarium.Stellarium.png",
    "description": "Stellarium renders 3D photo-realistic skies in real time with OpenGL. It displays stars, constellations, planets and nebulae, and has many other features including multiple panoramic landscapes, fog, light pollution simulation and a built-in scripting engine.\n\nStellarium comes with a star catalogue of about 600 thousand stars and it is possible to download extra catalogues with up to 220 million stars.\n\nStellarium has multiple sky cultures - see the constellations from the traditions of Polynesian, Inuit, Navajo, Korean, Greek and Chinese astronomers, as well as the traditional Western or official modern constellations.\n\nIt is also possible to visit other planets in the solar system - see what the sky looked like to the Apollo astronauts, or what the rings of Saturn looks like from Titan."
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.VectorCraft",
+   "name": "VectorCraft",
+   "summary": "Vector illustration and graphic design",
+   "description": "VectorCraft is an open-source vector art tool written from scratch in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/vectorcraft",
+   "source_code": "https://github.com/storytold/vectorcraft",
+   "icon": "https://getartcraft.com/images/apps/vectorcraft/icon.webp",
+   "topics": [
+    "graphics"
+   ],
+   "tags": [
+    "artcraft",
+    "vector",
+    "svg",
+    "illustration",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/vectorcraft",
+      "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/vectorcraft",
+      "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/vectorcraft",
+      "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "vectorcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/vectorcraft",
+      "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "vectorcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/vectorcraft",
+      "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/vectorcraft",
+      "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
   },
   {
    "schema_version": 1,
@@ -572,6 +1968,101 @@
    ],
    "icon": "https://dl.flathub.org/media/com/vscodium/codium/3914e24c34d81b8def2d0e58deaefefd/icons/128x128/com.vscodium.codium.png",
    "description": "VSCodium combines the simplicity of a code editor with what developers need for the core edit-build-debug cycle.\n\nThis is the telemetry-less version of Visual Studio Code, packaged into a Flatpak.\n\nThis repackaging is not supported by Microsoft.\n\nNote: To use certain features in this flatpak version, please see Readme file."
+  },
+  {
+   "schema_version": 1,
+   "id": "com.getartcraft.WordCraft",
+   "name": "WordCraft",
+   "summary": "Word processor: a clean-room take on Microsoft Word",
+   "description": "WordCraft is an open-source, clean-room reimplementation of Microsoft Word in pure Rust.\n\nPart of the ArtCraft crafting apps.",
+   "developer": "ArtCraft",
+   "license": "MIT OR Apache-2.0",
+   "homepage": "https://getartcraft.com/apps/wordcraft",
+   "source_code": "https://github.com/storytold/wordcraft",
+   "icon": "https://getartcraft.com/images/apps/wordcraft/icon.webp",
+   "topics": [
+    "office"
+   ],
+   "tags": [
+    "artcraft",
+    "word",
+    "docx",
+    "documents",
+    "rust"
+   ],
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/wordcraft",
+      "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "linux",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "github": {
+      "repo": "storytold/wordcraft",
+      "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/wordcraft",
+      "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+     },
+     "exec": "wordcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "aarch64"
+     ],
+     "kind": "download",
+     "format": "archive",
+     "github": {
+      "repo": "storytold/wordcraft",
+      "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+     },
+     "exec": "wordcraft.exe"
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/wordcraft",
+      "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "github": {
+      "repo": "storytold/wordcraft",
+      "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+     }
+    }
+   ]
   },
   {
    "schema_version": 1,

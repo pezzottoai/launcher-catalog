@@ -1,0 +1,96 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "com.getartcraft.DeckCraft",
+  "name": "DeckCraft",
+  "summary": "Presentations and slide shows",
+  "description": "DeckCraft is an open-source, clean-room presentation app in pure Rust, in the style of Microsoft PowerPoint.\n\nPart of the ArtCraft crafting apps.",
+  "developer": "ArtCraft",
+  "license": "MIT OR Apache-2.0",
+  "homepage": "https://getartcraft.com/apps/deckcraft",
+  "source_code": "https://github.com/storytold/deckcraft",
+  "icon": "https://getartcraft.com/images/apps/deckcraft/icon.webp",
+  "topics": [
+    "office"
+  ],
+  "tags": [
+    "artcraft",
+    "slides",
+    "presentation",
+    "pptx",
+    "rust"
+  ],
+  "installers": [
+    {
+      "platform": "linux",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "storytold/deckcraft",
+        "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "linux",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "github": {
+        "repo": "storytold/deckcraft",
+        "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "storytold/deckcraft",
+        "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
+      },
+      "exec": "deckcraft.exe"
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "aarch64"
+      ],
+      "kind": "download",
+      "format": "archive",
+      "github": {
+        "repo": "storytold/deckcraft",
+        "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
+      },
+      "exec": "deckcraft.exe"
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/deckcraft",
+        "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
+      }
+    },
+    {
+      "platform": "macos",
+      "kind": "download",
+      "format": "installer",
+      "github": {
+        "repo": "storytold/deckcraft",
+        "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
+      }
+    }
+  ]
+}
