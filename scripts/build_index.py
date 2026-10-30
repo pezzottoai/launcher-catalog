@@ -61,7 +61,7 @@ def builtin_checks(app, fname, topic_ids):
 
 
 def http_ok(url):
-    headers = {"User-Agent": "fosslauncher-catalog"}
+    headers = {"User-Agent": "pezzotto-launcher-catalog"}
     if url.startswith("https://api.github.com/") and os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
     req = urllib.request.Request(url, headers=headers)

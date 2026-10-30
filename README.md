@@ -1,12 +1,13 @@
-# FOSS Launcher catalog
+# pezzotto.ai launcher catalog
 
-The catalog of open-source applications installed by
-[FOSS Launcher](https://github.com/sirmmo/fosslauncher). Each application is one JSON file in
+The catalog of open-source applications installed by the
+[pezzotto.ai launcher](https://github.com/pezzottoai/launcher), including the open-source
+knock-offs of closed-source apps curated at [pezzotto.ai](https://pezzottoai.github.io). Each application is one JSON file in
 `apps/`; topics live in `topics.json`. CI validates every file and publishes the merged
 `index.json`, which is what the launcher downloads:
 
 ```
-https://raw.githubusercontent.com/sirmmo/fosslauncher-catalog/main/index.json
+https://raw.githubusercontent.com/pezzottoai/launcher-catalog/main/index.json
 ```
 
 ## Inclusion rules

@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/sirmmo/fosslauncher-catalog/main/schema/app.schema.json",
-  "title": "FOSS Launcher application manifest",
-  "description": "One open-source application in the FOSS Launcher catalog. One file per app: apps/<id>.json.",
+  "$id": "https://raw.githubusercontent.com/pezzottoai/launcher-catalog/main/schema/app.schema.json",
+  "title": "pezzotto.ai launcher application manifest",
+  "description": "One open-source application in the pezzotto.ai launcher catalog. One file per app: apps/<id>.json.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "id", "name", "summary", "license", "homepage", "source_code", "topics", "installers"],
