@@ -20,6 +20,10 @@
     "illustration",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -28,6 +32,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-linux-x86_64.AppImage",
+      "sha256": "9e0d487fc71b122e96f19b136d3acdb385eaa409f6d4a8034557f23562f2108a",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/vectorcraft",
         "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -40,6 +47,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-linux-aarch64.AppImage",
+      "sha256": "4312917dc0704d8967d1c3d37fc3854d5ae135631c17bb4ccb811ac1373ab2df",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/vectorcraft",
         "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -52,6 +62,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-windows-x64-portable.zip",
+      "sha256": "136f8615765414792df628b0e94d4c955d912d21d6848226930f7bb856a2e677",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/vectorcraft",
         "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -65,6 +78,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-windows-arm64-portable.zip",
+      "sha256": "3e5dbaf68273a1574bf0dd759c25c57696597659dbd40c4806183e2e0abeec63",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/vectorcraft",
         "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -78,6 +94,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-windows-x64.msi",
+      "sha256": "62267017a2aa30629a1112731e6e44a84bf5f9d13ee23c54a8ca18425bcc7e20",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/vectorcraft",
         "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -87,6 +106,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-macos-universal.dmg",
+      "sha256": "6e873fb39eaeb2e8ec5ea82bad366707d6ee4f3080b6157a625c52ef74633874",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/vectorcraft",
         "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

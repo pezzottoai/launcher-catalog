@@ -21,6 +21,10 @@
     "prototype",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -29,6 +33,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-linux-x86_64.AppImage",
+      "sha256": "c52be046d7bea73790f3584ffca6ec7935df229adce8f8e483b03242ee2aab1f",
+      "version": "v0.12.1",
       "github": {
         "repo": "storytold/figcraft",
         "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -41,6 +48,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-linux-aarch64.AppImage",
+      "sha256": "376bfefe6e596775287ca29df1e437d43891d954559a5b6ed372e60cf28ffa60",
+      "version": "v0.12.1",
       "github": {
         "repo": "storytold/figcraft",
         "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -53,6 +63,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-windows-x64-portable.zip",
+      "sha256": "d6a8c2f0e7a4ad1f82493ebc6acfbc9cf9c296dac14787fbfb2878d012a8670d",
+      "version": "v0.12.1",
       "github": {
         "repo": "storytold/figcraft",
         "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -66,6 +79,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-windows-arm64-portable.zip",
+      "sha256": "d4f317d68c9887e38e048c974ecc65679345186f28689b19c3b3d161c157326e",
+      "version": "v0.12.1",
       "github": {
         "repo": "storytold/figcraft",
         "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -79,6 +95,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-windows-x64.msi",
+      "sha256": "0538b5044b215a19df8fa880607f104f4653b4c0cbc850de1e69eca856f5f8f1",
+      "version": "v0.12.1",
       "github": {
         "repo": "storytold/figcraft",
         "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -88,6 +107,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-macos-universal.dmg",
+      "sha256": "e843212fb1b4c6ed565bcf954dce7ac5ca6038daa430f58e232e628045e841f9",
+      "version": "v0.12.1",
       "github": {
         "repo": "storytold/figcraft",
         "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

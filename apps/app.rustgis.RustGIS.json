@@ -22,6 +22,10 @@
     "vector",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -30,6 +34,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-linux-x86_64.AppImage",
+      "sha256": "70e80502188c39849ed015811e87f5e438df9a63cb6a1b8e64512e672b3c82fc",
+      "version": "v0.4.0",
       "github": {
         "repo": "opengeos/RustGIS",
         "asset": "^RustGIS-[0-9.]+-linux-x86_64\\.AppImage$"
@@ -42,6 +49,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-linux-aarch64.AppImage",
+      "sha256": "8f87c2bf8ce23f41a80721ec43c69bc5ac3ac3561e3cd42bba7ea9806ce7f94b",
+      "version": "v0.4.0",
       "github": {
         "repo": "opengeos/RustGIS",
         "asset": "^RustGIS-[0-9.]+-linux-aarch64\\.AppImage$"
@@ -54,6 +64,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-windows-x86_64-portable.zip",
+      "sha256": "ca0a339a41cf4a7ebd2dd0b7e0eb6ff183ce88375ca5447ef391c6991e8fda0c",
+      "version": "v0.4.0",
       "github": {
         "repo": "opengeos/RustGIS",
         "asset": "^RustGIS-[0-9.]+-windows-x86_64-portable\\.zip$"
@@ -67,6 +80,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-windows-x86_64.msi",
+      "sha256": "286283a14a119c43f646caab99e57b9b0b1c4dcea4fca369b681bccc04ff70b9",
+      "version": "v0.4.0",
       "github": {
         "repo": "opengeos/RustGIS",
         "asset": "^RustGIS-[0-9.]+-windows-x86_64\\.msi$"
@@ -75,13 +91,13 @@
     {
       "platform": "macos",
       "kind": "homebrew",
-      "package": "opengeos/rustgis/rustgis",
-      "cask": true,
       "run": [
         "open",
         "-a",
         "RustGIS"
-      ]
+      ],
+      "package": "opengeos/rustgis/rustgis",
+      "cask": true
     },
     {
       "platform": "macos",
@@ -90,6 +106,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-macos-aarch64.dmg",
+      "sha256": "5031ab7951fcb5550bbb323fdce1fe5234115448e86e471b82e1595014974cab",
+      "version": "v0.4.0",
       "github": {
         "repo": "opengeos/RustGIS",
         "asset": "^RustGIS-[0-9.]+-macos-aarch64\\.dmg$"
@@ -102,6 +121,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-macos-x86_64.dmg",
+      "sha256": "35a28d3ec827b4f07d69b10e17889838bfac41fc3c09ec083260f15acad920ad",
+      "version": "v0.4.0",
       "github": {
         "repo": "opengeos/RustGIS",
         "asset": "^RustGIS-[0-9.]+-macos-x86_64\\.dmg$"

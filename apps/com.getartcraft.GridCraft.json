@@ -21,6 +21,10 @@
     "xlsx",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -29,6 +33,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-linux-x86_64.AppImage",
+      "sha256": "2a87c3794cb2a7d0242a51c7695883b8beae51a7c5fac589a7d58dde1958b385",
+      "version": "v0.13.0",
       "github": {
         "repo": "storytold/gridcraft",
         "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -41,6 +48,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-linux-aarch64.AppImage",
+      "sha256": "33f3d28a237bea204203ef0576f835facfa7e10910ce502886bf8f5b434cbb7b",
+      "version": "v0.13.0",
       "github": {
         "repo": "storytold/gridcraft",
         "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -53,6 +63,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-windows-x64-portable.zip",
+      "sha256": "ff184e31ceb9284cbbb6c7ade71ac968d930c0dab1ca9de1147a1358a83bd8fd",
+      "version": "v0.13.0",
       "github": {
         "repo": "storytold/gridcraft",
         "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -66,6 +79,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-windows-arm64-portable.zip",
+      "sha256": "dfad485e8eef819a649c39f0ba0223c5315a9194ed8bbed113ae02547a0341df",
+      "version": "v0.13.0",
       "github": {
         "repo": "storytold/gridcraft",
         "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -79,6 +95,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-windows-x64.msi",
+      "sha256": "48acede0009eaf15ddced187c2143043d87e8e882d1ee0eb1e52e9ac7ecab1b2",
+      "version": "v0.13.0",
       "github": {
         "repo": "storytold/gridcraft",
         "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -88,6 +107,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-macos-universal.dmg",
+      "sha256": "67b6a023b465edf85ef5a309d49a6b00a085e3ea3dc9dddc0060996b38515168",
+      "version": "v0.13.0",
       "github": {
         "repo": "storytold/gridcraft",
         "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

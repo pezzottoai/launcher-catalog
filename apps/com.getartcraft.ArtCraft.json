@@ -20,6 +20,10 @@
     "ai",
     "3d"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "windows",
@@ -28,6 +32,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.0/ArtCraft_0.41.0_x64-setup.exe",
+      "sha256": "cb15da474ae36a7a7f930a6e9916be2794e7cc84c3340b531c38eabc82f4363e",
+      "version": "artcraft-v0.41.0",
       "github": {
         "repo": "storytold/artcraft",
         "asset": "^ArtCraft_[0-9.]+_x64-setup\\.exe$"
@@ -37,6 +44,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.0/ArtCraft_0.41.0_universal.dmg",
+      "sha256": "3cf1df2e56345e603c5d0180e5b563dd5eca25d9e3c3959d9554012f510916c1",
+      "version": "artcraft-v0.41.0",
       "github": {
         "repo": "storytold/artcraft",
         "asset": "^ArtCraft_[0-9.]+_universal\\.dmg$"

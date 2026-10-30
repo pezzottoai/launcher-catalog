@@ -20,6 +20,10 @@
     "dwg",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -28,6 +32,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-linux-x86_64.AppImage",
+      "sha256": "d054e5769ee18134698d0773476871cadd89491a91523c3eb258a82626bb99e7",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/cadcraft",
         "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -40,6 +47,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-linux-aarch64.AppImage",
+      "sha256": "1c09e2f8db7bbe6b709d0a5eca607e753fcb266b54e8fa83b7e7c03f9ac94bfc",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/cadcraft",
         "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -52,6 +62,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-x64-portable.zip",
+      "sha256": "f6f2b874358f3062dfbaf354b706be334c6a7a3eff49c38861c79c8a8efbea7c",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/cadcraft",
         "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -65,6 +78,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-arm64-portable.zip",
+      "sha256": "f2e97d1e42dc9ce521ec3ca9ed38e0a04ca730b07634ffb61e3e1ebca98821d2",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/cadcraft",
         "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -78,6 +94,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-x64.msi",
+      "sha256": "881567e17ee4481d3fc195e5003592ac9045fe88d4887c7bf5eb105e045eb193",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/cadcraft",
         "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -87,6 +106,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-macos-universal.dmg",
+      "sha256": "05aae1cc33745c0cd4171e74e05971d625b29884bb49e007031a42ae1adc02d2",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/cadcraft",
         "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

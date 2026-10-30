@@ -16,6 +16,10 @@
     "ide",
     "code"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -24,12 +28,15 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/VSCodium/vscodium/releases/download/1.143.17232/VSCodium-linux-x64-1.143.17232.tar.gz",
+      "sha256": "ca1895aa040bd91a09c709d79eac7862d8c1aa0237fdc25b503deeb8bcd87efd",
+      "version": "1.143.17232",
       "github": {
         "repo": "VSCodium/vscodium",
         "asset": "^VSCodium-linux-x64-[0-9.]+\\.tar\\.gz$"
       },
-      "strip_root": false,
-      "exec": "codium"
+      "exec": "codium",
+      "strip_root": false
     },
     {
       "platform": "linux",

@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated": "2026-10-30T12:00:34Z",
+ "generated": "2026-10-30T15:29:36Z",
  "topics": [
   {
    "id": "graphics",
@@ -80,6 +80,10 @@
     "ai",
     "3d"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "windows",
@@ -88,6 +92,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.0/ArtCraft_0.41.0_x64-setup.exe",
+     "sha256": "cb15da474ae36a7a7f930a6e9916be2794e7cc84c3340b531c38eabc82f4363e",
+     "version": "artcraft-v0.41.0",
      "github": {
       "repo": "storytold/artcraft",
       "asset": "^ArtCraft_[0-9.]+_x64-setup\\.exe$"
@@ -97,6 +104,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/artcraft/releases/download/artcraft-v0.41.0/ArtCraft_0.41.0_universal.dmg",
+     "sha256": "3cf1df2e56345e603c5d0180e5b563dd5eca25d9e3c3959d9554012f510916c1",
+     "version": "artcraft-v0.41.0",
      "github": {
       "repo": "storytold/artcraft",
       "asset": "^ArtCraft_[0-9.]+_universal\\.dmg$"
@@ -123,6 +133,10 @@
     "launcher",
     "updater"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -131,6 +145,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.10.0/artcraft-launcher-0.10.0-linux-x86_64.AppImage",
+     "sha256": "2c7f3f9c73dd944531df073ea6e800cff5ba9d533d00ff1f0015470ef17412ad",
+     "version": "v0.10.0",
      "github": {
       "repo": "storytold/craft-launcher",
       "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -143,6 +160,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.10.0/artcraft-launcher-0.10.0-linux-aarch64.AppImage",
+     "sha256": "03f41265b68f22cefa7fbb7de2e3c635fd2a15592c846c466af99acce3666cb1",
+     "version": "v0.10.0",
      "github": {
       "repo": "storytold/craft-launcher",
       "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -155,6 +175,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.10.0/artcraft-launcher-0.10.0-windows-x64-portable.zip",
+     "sha256": "935772606b8b181d926f77fb466b855610f0933ca2157758d94ed742e9233fd7",
+     "version": "v0.10.0",
      "github": {
       "repo": "storytold/craft-launcher",
       "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -168,6 +191,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.10.0/artcraft-launcher-0.10.0-windows-arm64-portable.zip",
+     "sha256": "0c38d2a419d9c61f2aa8cd4defb993522111412bba2e806b88801e11316d8dd5",
+     "version": "v0.10.0",
      "github": {
       "repo": "storytold/craft-launcher",
       "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -181,6 +207,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.10.0/artcraft-launcher-0.10.0-windows-x64.msi",
+     "sha256": "48b2353becdfc42728b0492bc4f838aa4d63508a1a022aaff22438bdefde73f6",
+     "version": "v0.10.0",
      "github": {
       "repo": "storytold/craft-launcher",
       "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -190,6 +219,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/craft-launcher/releases/download/v0.10.0/artcraft-launcher-0.10.0-macos-universal.dmg",
+     "sha256": "f05856049eb098140dfa303587e65b9c6db2e44f096adcfe44d870d780961aae",
+     "version": "v0.10.0",
      "github": {
       "repo": "storytold/craft-launcher",
       "asset": "^artcraft-launcher-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -295,6 +327,10 @@
     "dwg",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -303,6 +339,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-linux-x86_64.AppImage",
+     "sha256": "d054e5769ee18134698d0773476871cadd89491a91523c3eb258a82626bb99e7",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/cadcraft",
       "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -315,6 +354,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-linux-aarch64.AppImage",
+     "sha256": "1c09e2f8db7bbe6b709d0a5eca607e753fcb266b54e8fa83b7e7c03f9ac94bfc",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/cadcraft",
       "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -327,6 +369,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-x64-portable.zip",
+     "sha256": "f6f2b874358f3062dfbaf354b706be334c6a7a3eff49c38861c79c8a8efbea7c",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/cadcraft",
       "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -340,6 +385,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-arm64-portable.zip",
+     "sha256": "f2e97d1e42dc9ce521ec3ca9ed38e0a04ca730b07634ffb61e3e1ebca98821d2",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/cadcraft",
       "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -353,6 +401,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-windows-x64.msi",
+     "sha256": "881567e17ee4481d3fc195e5003592ac9045fe88d4887c7bf5eb105e045eb193",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/cadcraft",
       "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -362,6 +413,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/cadcraft/releases/download/v0.14.0/cadcraft-0.14.0-macos-universal.dmg",
+     "sha256": "05aae1cc33745c0cd4171e74e05971d625b29884bb49e007031a42ae1adc02d2",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/cadcraft",
       "asset": "^cadcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -390,6 +444,10 @@
     "pptx",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -398,6 +456,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-linux-x86_64.AppImage",
+     "sha256": "296d3e6afc51667a863cb189c2c3972fee6b9c6416484cbe09b0de7f3876ea3a",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/deckcraft",
       "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -410,6 +471,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-linux-aarch64.AppImage",
+     "sha256": "7d24a225a515d969952500543fe91367a9560f488fb327c86b42f3ef690cb61c",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/deckcraft",
       "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -422,6 +486,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-windows-x64-portable.zip",
+     "sha256": "3cffd4abee0b7f330ae406bc6fd33a74e3b7b5e7919ebc5d20faa77cef5b3bea",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/deckcraft",
       "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -435,6 +502,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-windows-arm64-portable.zip",
+     "sha256": "d30dcb9375d9f32e1a251768f5cf21117714f71912572514b8245f31ce940110",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/deckcraft",
       "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -448,6 +518,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-windows-x64.msi",
+     "sha256": "3bd12f8a0e351d2b4ec86378da2b5ba4082bfa9b37e52e43ef9e40e7ca2fc313",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/deckcraft",
       "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -457,6 +530,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-macos-universal.dmg",
+     "sha256": "feb7e54543c136b349479746b60779cc5bf3e5d8b3d15838156ed16005d253d5",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/deckcraft",
       "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -486,6 +562,10 @@
     "print",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -494,6 +574,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-linux-x86_64.AppImage",
+     "sha256": "c7b9a4b760e4c94b05fde4cd1c266823a736bc3fa507150cff0dc1920edfc28e",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/designcraft",
       "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -506,6 +589,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-linux-aarch64.AppImage",
+     "sha256": "aa342edb6543487290e81a63d61fd3c31fc038875f77e2c786d84419cb45d045",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/designcraft",
       "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -518,6 +604,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-windows-x64-portable.zip",
+     "sha256": "4e06b9f60fa98326902994cc76945f1cd0c331b64f66b2a685b05da5db120eed",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/designcraft",
       "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -531,6 +620,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-windows-arm64-portable.zip",
+     "sha256": "da3cfc290be9a35adc849c5eae634e93285524adf8f197d5e8d107c9531d3ea6",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/designcraft",
       "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -544,6 +636,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-windows-x64.msi",
+     "sha256": "d55165f6adada74a5129b824132bbb516803cb1d04ad6d8b9e65f6d0b1cfd2f1",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/designcraft",
       "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -553,6 +648,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-macos-universal.dmg",
+     "sha256": "9392fb563de06da2eca48791a40f812f721103697362015659b3ff7577e7b081",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/designcraft",
       "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -582,6 +680,10 @@
     "compositing",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -590,6 +692,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-linux-x86_64.AppImage",
+     "sha256": "071f8eb42be63a7862117d399f96d7ed4cc5b90ac1d06b6bab99370d0cd4ada3",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/effectcraft",
       "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -602,6 +707,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-linux-aarch64.AppImage",
+     "sha256": "bee3a7f8d720869df9f9276b3df2f8e7f54e8b9e961ab296665f24a7078b6d48",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/effectcraft",
       "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -614,6 +722,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-windows-x64-portable.zip",
+     "sha256": "142d7c76400658edc192625464deadedc83e9bc11635d72c31660cb557881e91",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/effectcraft",
       "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -627,6 +738,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-windows-arm64-portable.zip",
+     "sha256": "1a57e8eaf828b8fd3afd9114697da09bc111bb025ac594add11f3496db187e09",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/effectcraft",
       "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -640,6 +754,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-windows-x64.msi",
+     "sha256": "dc9905b586734960078d749a7c6c27b055d3bf31d76c1e44d3af961c6340735f",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/effectcraft",
       "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -649,6 +766,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-macos-universal.dmg",
+     "sha256": "79a0c24a644018eb39b722eddb5a15a34280c86856171f6a6415a3541b182004",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/effectcraft",
       "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -678,6 +798,10 @@
     "prototype",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -686,6 +810,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-linux-x86_64.AppImage",
+     "sha256": "c52be046d7bea73790f3584ffca6ec7935df229adce8f8e483b03242ee2aab1f",
+     "version": "v0.12.1",
      "github": {
       "repo": "storytold/figcraft",
       "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -698,6 +825,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-linux-aarch64.AppImage",
+     "sha256": "376bfefe6e596775287ca29df1e437d43891d954559a5b6ed372e60cf28ffa60",
+     "version": "v0.12.1",
      "github": {
       "repo": "storytold/figcraft",
       "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -710,6 +840,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-windows-x64-portable.zip",
+     "sha256": "d6a8c2f0e7a4ad1f82493ebc6acfbc9cf9c296dac14787fbfb2878d012a8670d",
+     "version": "v0.12.1",
      "github": {
       "repo": "storytold/figcraft",
       "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -723,6 +856,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-windows-arm64-portable.zip",
+     "sha256": "d4f317d68c9887e38e048c974ecc65679345186f28689b19c3b3d161c157326e",
+     "version": "v0.12.1",
      "github": {
       "repo": "storytold/figcraft",
       "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -736,6 +872,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-windows-x64.msi",
+     "sha256": "0538b5044b215a19df8fa880607f104f4653b4c0cbc850de1e69eca856f5f8f1",
+     "version": "v0.12.1",
      "github": {
       "repo": "storytold/figcraft",
       "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -745,6 +884,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/figcraft/releases/download/v0.12.1/figcraft-0.12.1-macos-universal.dmg",
+     "sha256": "e843212fb1b4c6ed565bcf954dce7ac5ca6038daa430f58e232e628045e841f9",
+     "version": "v0.12.1",
      "github": {
       "repo": "storytold/figcraft",
       "asset": "^figcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -773,6 +915,10 @@
     "nle",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -781,6 +927,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-linux-x86_64.AppImage",
+     "sha256": "133b8b88db6dee3fa47dd39fc1c9dd9228283806a37b951587cc6365aec9a3d3",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/filmcraft",
       "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -793,6 +942,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-linux-aarch64.AppImage",
+     "sha256": "b6e447df17efb3ade880d412a0c3855177320dc4b8cee90d395d343c9fb442c4",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/filmcraft",
       "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -805,6 +957,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-windows-x64-portable.zip",
+     "sha256": "7e0889e62399a19a0540cc4e8932d55c9b2710aebec2c392f0fcd7840eaf835e",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/filmcraft",
       "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -818,6 +973,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-windows-arm64-portable.zip",
+     "sha256": "ac8e670c53cc7304b561b818b50018a2d853e4bdf2a83e8620d3ce0c8da4c3ca",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/filmcraft",
       "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -831,6 +989,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-windows-x64.msi",
+     "sha256": "47767e1f3e97c2a706c960335d887639ad7fb28eeef145ad921ed790ba3625e1",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/filmcraft",
       "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -840,6 +1001,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-macos-universal.dmg",
+     "sha256": "9f87564f83f55d9dea32ceeb73aa3cb74b15aec05347dd3e163fd0a6abef6b27",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/filmcraft",
       "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -945,6 +1109,10 @@
     "xlsx",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -953,6 +1121,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-linux-x86_64.AppImage",
+     "sha256": "2a87c3794cb2a7d0242a51c7695883b8beae51a7c5fac589a7d58dde1958b385",
+     "version": "v0.13.0",
      "github": {
       "repo": "storytold/gridcraft",
       "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -965,6 +1136,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-linux-aarch64.AppImage",
+     "sha256": "33f3d28a237bea204203ef0576f835facfa7e10910ce502886bf8f5b434cbb7b",
+     "version": "v0.13.0",
      "github": {
       "repo": "storytold/gridcraft",
       "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -977,6 +1151,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-windows-x64-portable.zip",
+     "sha256": "ff184e31ceb9284cbbb6c7ade71ac968d930c0dab1ca9de1147a1358a83bd8fd",
+     "version": "v0.13.0",
      "github": {
       "repo": "storytold/gridcraft",
       "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -990,6 +1167,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-windows-arm64-portable.zip",
+     "sha256": "dfad485e8eef819a649c39f0ba0223c5315a9194ed8bbed113ae02547a0341df",
+     "version": "v0.13.0",
      "github": {
       "repo": "storytold/gridcraft",
       "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -1003,6 +1183,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-windows-x64.msi",
+     "sha256": "48acede0009eaf15ddced187c2143043d87e8e882d1ee0eb1e52e9ac7ecab1b2",
+     "version": "v0.13.0",
      "github": {
       "repo": "storytold/gridcraft",
       "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -1012,6 +1195,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/gridcraft/releases/download/v0.13.0/gridcraft-0.13.0-macos-universal.dmg",
+     "sha256": "67b6a023b465edf85ef5a309d49a6b00a085e3ea3dc9dddc0060996b38515168",
+     "version": "v0.13.0",
      "github": {
       "repo": "storytold/gridcraft",
       "asset": "^gridcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -1106,6 +1292,10 @@
     "passwords",
     "kdbx"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1114,6 +1304,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x86_64.AppImage",
+     "sha256": "b52889fd627ae7a1c609b91b2526ccd5d847ec6707ac6eb634553186dee4f705",
+     "version": "2.8.0",
      "github": {
       "repo": "keepassxreboot/keepassxc",
       "asset": "^KeePassXC-[0-9.]+-x86_64\\.AppImage$"
@@ -1237,6 +1430,10 @@
     "catalog",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1245,6 +1442,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-linux-x86_64.AppImage",
+     "sha256": "851f1c1554fda928fe433e9cbe0e139a393231565561c2e5152b720bb059813b",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/lightcraft",
       "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -1257,6 +1457,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-linux-aarch64.AppImage",
+     "sha256": "17b54138c11b47815580e19ea5128f41a81e33d98b7c97c29a8108b9fc8a2919",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/lightcraft",
       "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -1269,6 +1472,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-windows-x64-portable.zip",
+     "sha256": "94e70e9818bd0d108d661716d682e98aec8cdf0d3f3fb2560b2e6816f6779a11",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/lightcraft",
       "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -1282,6 +1488,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-windows-arm64-portable.zip",
+     "sha256": "ca69d9b66c1077f81a69bb18fb15a4c0c19c7727f8a89d8d670d04e8b96d3d93",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/lightcraft",
       "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -1295,6 +1504,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-windows-x64.msi",
+     "sha256": "fc0956fd18e338d9ed24977e03f93be4d91d0a54d02956f95ee9deb229cbe154",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/lightcraft",
       "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -1304,6 +1516,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-macos-universal.dmg",
+     "sha256": "175c1e68187d91cf90033a93015fb4cb450455755b78f41e394a9ea09e77cde9",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/lightcraft",
       "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -1331,6 +1546,10 @@
     "documents",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1339,6 +1558,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-linux-x86_64.AppImage",
+     "sha256": "7d7771a62a9c81e35b1de286ad38110c85a59a040c12b961f024ee972338d2fe",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/pdfcraft",
       "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -1351,6 +1573,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-linux-aarch64.AppImage",
+     "sha256": "c43010378f9180887644eaa5ad8cc9ff9168714e0a108f49e62a2c1b7be012a0",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/pdfcraft",
       "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -1363,6 +1588,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-windows-x64-portable.zip",
+     "sha256": "92df7bef0b4c1eb7a59d0410716903e69fe4d2c4ea0074c6b53780096c3e20f9",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/pdfcraft",
       "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -1376,6 +1604,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-windows-arm64-portable.zip",
+     "sha256": "12207c2a822c92a80b126835c57e57ed2270ae2944db471f0a19bdb70e2cfa8d",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/pdfcraft",
       "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -1389,6 +1620,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-windows-x64.msi",
+     "sha256": "de7ad1ca86f6527ec357deba0182e8c596b7895e9638b1ca3b61f0adbc3e5d62",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/pdfcraft",
       "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -1398,6 +1632,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-macos-universal.dmg",
+     "sha256": "c124fc2ed512765943fb2e8e764bc14c079dc5b7d7a5439ccdb3401df78fd472",
+     "version": "v0.15.0",
      "github": {
       "repo": "storytold/pdfcraft",
       "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -1426,6 +1663,10 @@
     "raster",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1434,6 +1675,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.17.0/photocraft-0.17.0-linux-x86_64.AppImage",
+     "sha256": "ce77299f243534ac1d248aa81c9a9fd278ae407c024cb931e03931eb70be54af",
+     "version": "v0.17.0",
      "github": {
       "repo": "storytold/photocraft",
       "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -1446,6 +1690,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.17.0/photocraft-0.17.0-linux-aarch64.AppImage",
+     "sha256": "8f6f34dba1a68802a154139172d80e6a310759a78a75f02d39d5b26ccf3384eb",
+     "version": "v0.17.0",
      "github": {
       "repo": "storytold/photocraft",
       "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -1458,6 +1705,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.17.0/photocraft-0.17.0-windows-x64-portable.zip",
+     "sha256": "3453777af0a0b376bfea0d1ccf42bedcbe1c324e1836b50d6227b9e1d64a20ab",
+     "version": "v0.17.0",
      "github": {
       "repo": "storytold/photocraft",
       "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -1471,6 +1721,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.17.0/photocraft-0.17.0-windows-arm64-portable.zip",
+     "sha256": "fe0f621702ee723d51d771f245aed2de2e5111349bce524afc04a66efa1c2627",
+     "version": "v0.17.0",
      "github": {
       "repo": "storytold/photocraft",
       "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -1484,6 +1737,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.17.0/photocraft-0.17.0-windows-x64.msi",
+     "sha256": "e309e48d26049f7f2ec65401c5da1899922456bdb7eb312be154c9f1490415e0",
+     "version": "v0.17.0",
      "github": {
       "repo": "storytold/photocraft",
       "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -1493,6 +1749,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/photocraft/releases/download/v0.17.0/photocraft-0.17.0-macos-universal.dmg",
+     "sha256": "6e0903172a7440ce4e71002f5585ba4eff588fa3fc99b78cd9811180cabd5b80",
+     "version": "v0.17.0",
      "github": {
       "repo": "storytold/photocraft",
       "asset": "^photocraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -1563,6 +1822,10 @@
     "vector",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1571,6 +1834,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-linux-x86_64.AppImage",
+     "sha256": "70e80502188c39849ed015811e87f5e438df9a63cb6a1b8e64512e672b3c82fc",
+     "version": "v0.4.0",
      "github": {
       "repo": "opengeos/RustGIS",
       "asset": "^RustGIS-[0-9.]+-linux-x86_64\\.AppImage$"
@@ -1583,6 +1849,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-linux-aarch64.AppImage",
+     "sha256": "8f87c2bf8ce23f41a80721ec43c69bc5ac3ac3561e3cd42bba7ea9806ce7f94b",
+     "version": "v0.4.0",
      "github": {
       "repo": "opengeos/RustGIS",
       "asset": "^RustGIS-[0-9.]+-linux-aarch64\\.AppImage$"
@@ -1595,6 +1864,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-windows-x86_64-portable.zip",
+     "sha256": "ca0a339a41cf4a7ebd2dd0b7e0eb6ff183ce88375ca5447ef391c6991e8fda0c",
+     "version": "v0.4.0",
      "github": {
       "repo": "opengeos/RustGIS",
       "asset": "^RustGIS-[0-9.]+-windows-x86_64-portable\\.zip$"
@@ -1608,6 +1880,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-windows-x86_64.msi",
+     "sha256": "286283a14a119c43f646caab99e57b9b0b1c4dcea4fca369b681bccc04ff70b9",
+     "version": "v0.4.0",
      "github": {
       "repo": "opengeos/RustGIS",
       "asset": "^RustGIS-[0-9.]+-windows-x86_64\\.msi$"
@@ -1616,13 +1891,13 @@
     {
      "platform": "macos",
      "kind": "homebrew",
-     "package": "opengeos/rustgis/rustgis",
-     "cask": true,
      "run": [
       "open",
       "-a",
       "RustGIS"
-     ]
+     ],
+     "package": "opengeos/rustgis/rustgis",
+     "cask": true
     },
     {
      "platform": "macos",
@@ -1631,6 +1906,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-macos-aarch64.dmg",
+     "sha256": "5031ab7951fcb5550bbb323fdce1fe5234115448e86e471b82e1595014974cab",
+     "version": "v0.4.0",
      "github": {
       "repo": "opengeos/RustGIS",
       "asset": "^RustGIS-[0-9.]+-macos-aarch64\\.dmg$"
@@ -1643,6 +1921,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/opengeos/RustGIS/releases/download/v0.4.0/RustGIS-0.4.0-macos-x86_64.dmg",
+     "sha256": "35a28d3ec827b4f07d69b10e17889838bfac41fc3c09ec083260f15acad920ad",
+     "version": "v0.4.0",
      "github": {
       "repo": "opengeos/RustGIS",
       "asset": "^RustGIS-[0-9.]+-macos-x86_64\\.dmg$"
@@ -1671,6 +1952,10 @@
     "music",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1679,6 +1964,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-linux-x86_64.AppImage",
+     "sha256": "e1f2eee16c6da59db23c0724e97992029bdc3a19a8e64704753d398db7832387",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/soundcraft",
       "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -1691,6 +1979,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-linux-aarch64.AppImage",
+     "sha256": "498826a8315e46c4862f049d705ecc7c849fcb155db5cd0d5048cb2bbdc58049",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/soundcraft",
       "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -1703,6 +1994,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-windows-x64-portable.zip",
+     "sha256": "c54601aaf20c55e2a7e30fad20f08ca56d0b8913f0182f15665413c89fe88904",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/soundcraft",
       "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -1716,6 +2010,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-windows-arm64-portable.zip",
+     "sha256": "d13cde794d930052239f407643f143f5a11524c276e5444927b81783cae2ca7a",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/soundcraft",
       "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -1729,6 +2026,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-windows-x64.msi",
+     "sha256": "a37cb70fb7c93c61391e2e7cb0898e9984ccaac2cc9b693bbdee15bcdbdfc51b",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/soundcraft",
       "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -1738,6 +2038,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-macos-universal.dmg",
+     "sha256": "9377e164670ecb76a4610868ac24f7804415d82cf0016c27f24cc3cc5baa41df",
+     "version": "v0.14.0",
      "github": {
       "repo": "storytold/soundcraft",
       "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -1805,6 +2108,10 @@
     "illustration",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1813,6 +2120,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-linux-x86_64.AppImage",
+     "sha256": "9e0d487fc71b122e96f19b136d3acdb385eaa409f6d4a8034557f23562f2108a",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/vectorcraft",
       "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -1825,6 +2135,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-linux-aarch64.AppImage",
+     "sha256": "4312917dc0704d8967d1c3d37fc3854d5ae135631c17bb4ccb811ac1373ab2df",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/vectorcraft",
       "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -1837,6 +2150,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-windows-x64-portable.zip",
+     "sha256": "136f8615765414792df628b0e94d4c955d912d21d6848226930f7bb856a2e677",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/vectorcraft",
       "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -1850,6 +2166,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-windows-arm64-portable.zip",
+     "sha256": "3e5dbaf68273a1574bf0dd759c25c57696597659dbd40c4806183e2e0abeec63",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/vectorcraft",
       "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -1863,6 +2182,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-windows-x64.msi",
+     "sha256": "62267017a2aa30629a1112731e6e44a84bf5f9d13ee23c54a8ca18425bcc7e20",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/vectorcraft",
       "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -1872,6 +2194,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/vectorcraft/releases/download/v0.18.0/vectorcraft-0.18.0-macos-universal.dmg",
+     "sha256": "6e873fb39eaeb2e8ec5ea82bad366707d6ee4f3080b6157a625c52ef74633874",
+     "version": "v0.18.0",
      "github": {
       "repo": "storytold/vectorcraft",
       "asset": "^vectorcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"
@@ -1934,6 +2259,10 @@
     "ide",
     "code"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1942,12 +2271,15 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/VSCodium/vscodium/releases/download/1.143.17232/VSCodium-linux-x64-1.143.17232.tar.gz",
+     "sha256": "ca1895aa040bd91a09c709d79eac7862d8c1aa0237fdc25b503deeb8bcd87efd",
+     "version": "1.143.17232",
      "github": {
       "repo": "VSCodium/vscodium",
       "asset": "^VSCodium-linux-x64-[0-9.]+\\.tar\\.gz$"
      },
-     "strip_root": false,
-     "exec": "codium"
+     "exec": "codium",
+     "strip_root": false
     },
     {
      "platform": "linux",
@@ -1990,6 +2322,10 @@
     "documents",
     "rust"
    ],
+   "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+   },
    "installers": [
     {
      "platform": "linux",
@@ -1998,6 +2334,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-linux-x86_64.AppImage",
+     "sha256": "d0730024db6c969e79ebaa9cc9abcdfbb198ea9b29c9bd0a2a04f9834e7656cb",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/wordcraft",
       "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -2010,6 +2349,9 @@
      ],
      "kind": "download",
      "format": "appimage",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-linux-aarch64.AppImage",
+     "sha256": "4b01993f624eddfc90fab8a75ca93b9d3c22427597f0338044d11ba7efb61cc5",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/wordcraft",
       "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -2022,6 +2364,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-windows-x64-portable.zip",
+     "sha256": "60d2da7dce7ee219300e50968297df63730f9407f8b5daf01da9109f0a64e67e",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/wordcraft",
       "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -2035,6 +2380,9 @@
      ],
      "kind": "download",
      "format": "archive",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-windows-arm64-portable.zip",
+     "sha256": "b573433b970a8bc0745283e3cd1e0c2e3eca41e11fd1d9651100a4730c593fde",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/wordcraft",
       "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -2048,6 +2396,9 @@
      ],
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-windows-x64.msi",
+     "sha256": "034271e22d7a6a78bb1dfee827df48dbcd9d86526be0890c694e58172eef3aac",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/wordcraft",
       "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -2057,6 +2408,9 @@
      "platform": "macos",
      "kind": "download",
      "format": "installer",
+     "url": "https://github.com/storytold/wordcraft/releases/download/v0.12.0/wordcraft-0.12.0-macos-universal.dmg",
+     "sha256": "2444eb9ca2755f4655c55e97d9de63876f338a1588ab35e912ac76f38cea7709",
+     "version": "v0.12.0",
      "github": {
       "repo": "storytold/wordcraft",
       "asset": "^wordcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

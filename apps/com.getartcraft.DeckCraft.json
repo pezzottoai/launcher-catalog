@@ -20,6 +20,10 @@
     "pptx",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -28,6 +32,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-linux-x86_64.AppImage",
+      "sha256": "296d3e6afc51667a863cb189c2c3972fee6b9c6416484cbe09b0de7f3876ea3a",
+      "version": "v0.12.0",
       "github": {
         "repo": "storytold/deckcraft",
         "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -40,6 +47,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-linux-aarch64.AppImage",
+      "sha256": "7d24a225a515d969952500543fe91367a9560f488fb327c86b42f3ef690cb61c",
+      "version": "v0.12.0",
       "github": {
         "repo": "storytold/deckcraft",
         "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -52,6 +62,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-windows-x64-portable.zip",
+      "sha256": "3cffd4abee0b7f330ae406bc6fd33a74e3b7b5e7919ebc5d20faa77cef5b3bea",
+      "version": "v0.12.0",
       "github": {
         "repo": "storytold/deckcraft",
         "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -65,6 +78,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-windows-arm64-portable.zip",
+      "sha256": "d30dcb9375d9f32e1a251768f5cf21117714f71912572514b8245f31ce940110",
+      "version": "v0.12.0",
       "github": {
         "repo": "storytold/deckcraft",
         "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -78,6 +94,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-windows-x64.msi",
+      "sha256": "3bd12f8a0e351d2b4ec86378da2b5ba4082bfa9b37e52e43ef9e40e7ca2fc313",
+      "version": "v0.12.0",
       "github": {
         "repo": "storytold/deckcraft",
         "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -87,6 +106,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/deckcraft/releases/download/v0.12.0/deckcraft-0.12.0-macos-universal.dmg",
+      "sha256": "feb7e54543c136b349479746b60779cc5bf3e5d8b3d15838156ed16005d253d5",
+      "version": "v0.12.0",
       "github": {
         "repo": "storytold/deckcraft",
         "asset": "^deckcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

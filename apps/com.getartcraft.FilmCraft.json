@@ -20,6 +20,10 @@
     "nle",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -28,6 +32,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-linux-x86_64.AppImage",
+      "sha256": "133b8b88db6dee3fa47dd39fc1c9dd9228283806a37b951587cc6365aec9a3d3",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/filmcraft",
         "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -40,6 +47,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-linux-aarch64.AppImage",
+      "sha256": "b6e447df17efb3ade880d412a0c3855177320dc4b8cee90d395d343c9fb442c4",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/filmcraft",
         "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -52,6 +62,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-windows-x64-portable.zip",
+      "sha256": "7e0889e62399a19a0540cc4e8932d55c9b2710aebec2c392f0fcd7840eaf835e",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/filmcraft",
         "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -65,6 +78,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-windows-arm64-portable.zip",
+      "sha256": "ac8e670c53cc7304b561b818b50018a2d853e4bdf2a83e8620d3ce0c8da4c3ca",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/filmcraft",
         "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -78,6 +94,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-windows-x64.msi",
+      "sha256": "47767e1f3e97c2a706c960335d887639ad7fb28eeef145ad921ed790ba3625e1",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/filmcraft",
         "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -87,6 +106,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/filmcraft/releases/download/v0.14.0/filmcraft-0.14.0-macos-universal.dmg",
+      "sha256": "9f87564f83f55d9dea32ceeb73aa3cb74b15aec05347dd3e163fd0a6abef6b27",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/filmcraft",
         "asset": "^filmcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

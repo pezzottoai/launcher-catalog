@@ -2,7 +2,7 @@
 """Validate the catalog and write index.json.
 
 Usage:
-  scripts/build_index.py                 # validate + write index.json
+  scripts/build_index.py                 # validate + write index.json (sign it with scripts/sign_index.py)
   scripts/build_index.py --check         # validate only
   scripts/build_index.py --check-remote  # also verify flatpak/winget/homebrew ids and GitHub release assets online
   scripts/build_index.py --enrich        # fill missing icon/description in index.json from Flathub AppStream data
@@ -46,8 +46,10 @@ def builtin_checks(app, fname, topic_ids):
         if kind not in KINDS:
             errs.append(f"{where}: bad kind")
         if kind == "download":
-            if ("url" in inst) == ("github" in inst):
-                errs.append(f"{where}: needs exactly one of url / github")
+            if "url" not in inst and "github" not in inst:
+                errs.append(f"{where}: needs url and/or github")
+            if app.get("certified") and not ("url" in inst and "sha256" in inst):
+                errs.append(f"{where}: a certified app must pin url + sha256 on every download (run scripts/pin.py)")
             if "url" in inst and not re.fullmatch(r"[0-9a-f]{64}", inst.get("sha256", "")):
                 errs.append(f"{where}: pinned url needs sha256")
             if "github" in inst:

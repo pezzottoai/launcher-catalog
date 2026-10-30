@@ -20,6 +20,10 @@
     "music",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -28,6 +32,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-linux-x86_64.AppImage",
+      "sha256": "e1f2eee16c6da59db23c0724e97992029bdc3a19a8e64704753d398db7832387",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/soundcraft",
         "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -40,6 +47,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-linux-aarch64.AppImage",
+      "sha256": "498826a8315e46c4862f049d705ecc7c849fcb155db5cd0d5048cb2bbdc58049",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/soundcraft",
         "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -52,6 +62,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-windows-x64-portable.zip",
+      "sha256": "c54601aaf20c55e2a7e30fad20f08ca56d0b8913f0182f15665413c89fe88904",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/soundcraft",
         "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -65,6 +78,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-windows-arm64-portable.zip",
+      "sha256": "d13cde794d930052239f407643f143f5a11524c276e5444927b81783cae2ca7a",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/soundcraft",
         "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -78,6 +94,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-windows-x64.msi",
+      "sha256": "a37cb70fb7c93c61391e2e7cb0898e9984ccaac2cc9b693bbdee15bcdbdfc51b",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/soundcraft",
         "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -87,6 +106,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/soundcraft/releases/download/v0.14.0/soundcraft-0.14.0-macos-universal.dmg",
+      "sha256": "9377e164670ecb76a4610868ac24f7804415d82cf0016c27f24cc3cc5baa41df",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/soundcraft",
         "asset": "^soundcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

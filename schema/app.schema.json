@@ -35,6 +35,16 @@
       "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
     },
     "tags": { "description": "Free-form search keywords.", "type": "array", "items": { "type": "string" } },
+    "certified": {
+      "description": "Set by scripts/pin.py once every download installer is pinned to one release (url + sha256). The launcher shows it and, in strict mode, only installs pinned downloads.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "date"],
+      "properties": {
+        "level": { "description": "pinned: exact release files, with their hashes, in the signed catalog.", "enum": ["pinned"] },
+        "date": { "description": "When the pins were last refreshed.", "type": "string", "format": "date" }
+      }
+    },
     "installers": {
       "description": "Ways to install the app, in order of preference. The launcher picks the first one that matches the current platform/arch and whose tool is available.",
       "type": "array",
@@ -93,17 +103,17 @@
           "if": { "properties": { "kind": { "const": "download" } } },
           "then": {
             "required": ["format"],
-            "oneOf": [{ "required": ["url"] }, { "required": ["github"] }],
+            "anyOf": [{ "required": ["url"] }, { "required": ["github"] }],
             "properties": {
               "format": {
                 "description": "appimage: single executable file. archive: .zip or .tar.gz extracted into the app directory. binary: single executable. installer: native installer (.msi, .exe, .dmg, .pkg, .deb) handed to the OS.",
                 "enum": ["appimage", "archive", "binary", "installer"]
               },
-              "url": { "description": "Pinned download URL.", "type": "string", "format": "uri", "pattern": "^https://" },
+              "url": { "description": "Pinned download URL of one exact release file. May coexist with github: the pinned file is what gets installed, github is where scripts/pin.py looks for newer releases.", "type": "string", "format": "uri", "pattern": "^https://" },
               "sha256": { "description": "Required with a pinned url.", "type": "string", "pattern": "^[0-9a-f]{64}$" },
-              "version": { "type": "string" },
+              "version": { "description": "Version of the pinned file (release tag).", "type": "string" },
               "github": {
-                "description": "Resolve the latest GitHub release at install time.",
+                "description": "GitHub repository and release asset. Without url, the latest release is resolved at install time.",
                 "type": "object",
                 "additionalProperties": false,
                 "required": ["repo", "asset"],

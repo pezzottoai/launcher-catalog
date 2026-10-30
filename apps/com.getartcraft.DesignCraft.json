@@ -21,6 +21,10 @@
     "print",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -29,6 +33,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-linux-x86_64.AppImage",
+      "sha256": "c7b9a4b760e4c94b05fde4cd1c266823a736bc3fa507150cff0dc1920edfc28e",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/designcraft",
         "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -41,6 +48,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-linux-aarch64.AppImage",
+      "sha256": "aa342edb6543487290e81a63d61fd3c31fc038875f77e2c786d84419cb45d045",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/designcraft",
         "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -53,6 +63,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-windows-x64-portable.zip",
+      "sha256": "4e06b9f60fa98326902994cc76945f1cd0c331b64f66b2a685b05da5db120eed",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/designcraft",
         "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -66,6 +79,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-windows-arm64-portable.zip",
+      "sha256": "da3cfc290be9a35adc849c5eae634e93285524adf8f197d5e8d107c9531d3ea6",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/designcraft",
         "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -79,6 +95,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-windows-x64.msi",
+      "sha256": "d55165f6adada74a5129b824132bbb516803cb1d04ad6d8b9e65f6d0b1cfd2f1",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/designcraft",
         "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -88,6 +107,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/designcraft/releases/download/v0.14.0/designcraft-0.14.0-macos-universal.dmg",
+      "sha256": "9392fb563de06da2eca48791a40f812f721103697362015659b3ff7577e7b081",
+      "version": "v0.14.0",
       "github": {
         "repo": "storytold/designcraft",
         "asset": "^designcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

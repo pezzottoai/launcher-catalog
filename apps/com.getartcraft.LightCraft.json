@@ -20,6 +20,10 @@
     "catalog",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -28,6 +32,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-linux-x86_64.AppImage",
+      "sha256": "851f1c1554fda928fe433e9cbe0e139a393231565561c2e5152b720bb059813b",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/lightcraft",
         "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -40,6 +47,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-linux-aarch64.AppImage",
+      "sha256": "17b54138c11b47815580e19ea5128f41a81e33d98b7c97c29a8108b9fc8a2919",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/lightcraft",
         "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -52,6 +62,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-windows-x64-portable.zip",
+      "sha256": "94e70e9818bd0d108d661716d682e98aec8cdf0d3f3fb2560b2e6816f6779a11",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/lightcraft",
         "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -65,6 +78,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-windows-arm64-portable.zip",
+      "sha256": "ca69d9b66c1077f81a69bb18fb15a4c0c19c7727f8a89d8d670d04e8b96d3d93",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/lightcraft",
         "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -78,6 +94,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-windows-x64.msi",
+      "sha256": "fc0956fd18e338d9ed24977e03f93be4d91d0a54d02956f95ee9deb229cbe154",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/lightcraft",
         "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -87,6 +106,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/lightcraft/releases/download/v0.15.0/lightcraft-0.15.0-macos-universal.dmg",
+      "sha256": "175c1e68187d91cf90033a93015fb4cb450455755b78f41e394a9ea09e77cde9",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/lightcraft",
         "asset": "^lightcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

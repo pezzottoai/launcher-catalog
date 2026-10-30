@@ -19,6 +19,10 @@
     "documents",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -27,6 +31,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-linux-x86_64.AppImage",
+      "sha256": "7d7771a62a9c81e35b1de286ad38110c85a59a040c12b961f024ee972338d2fe",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/pdfcraft",
         "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -39,6 +46,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-linux-aarch64.AppImage",
+      "sha256": "c43010378f9180887644eaa5ad8cc9ff9168714e0a108f49e62a2c1b7be012a0",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/pdfcraft",
         "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -51,6 +61,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-windows-x64-portable.zip",
+      "sha256": "92df7bef0b4c1eb7a59d0410716903e69fe4d2c4ea0074c6b53780096c3e20f9",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/pdfcraft",
         "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -64,6 +77,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-windows-arm64-portable.zip",
+      "sha256": "12207c2a822c92a80b126835c57e57ed2270ae2944db471f0a19bdb70e2cfa8d",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/pdfcraft",
         "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -77,6 +93,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-windows-x64.msi",
+      "sha256": "de7ad1ca86f6527ec357deba0182e8c596b7895e9638b1ca3b61f0adbc3e5d62",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/pdfcraft",
         "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -86,6 +105,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/pdfcraft/releases/download/v0.15.0/pdfcraft-0.15.0-macos-universal.dmg",
+      "sha256": "c124fc2ed512765943fb2e8e764bc14c079dc5b7d7a5439ccdb3401df78fd472",
+      "version": "v0.15.0",
       "github": {
         "repo": "storytold/pdfcraft",
         "asset": "^pdfcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

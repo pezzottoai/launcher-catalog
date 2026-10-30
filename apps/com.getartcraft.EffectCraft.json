@@ -21,6 +21,10 @@
     "compositing",
     "rust"
   ],
+  "certified": {
+    "level": "pinned",
+    "date": "2026-10-30"
+  },
   "installers": [
     {
       "platform": "linux",
@@ -29,6 +33,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-linux-x86_64.AppImage",
+      "sha256": "071f8eb42be63a7862117d399f96d7ed4cc5b90ac1d06b6bab99370d0cd4ada3",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/effectcraft",
         "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-linux-x86_64\\.AppImage$"
@@ -41,6 +48,9 @@
       ],
       "kind": "download",
       "format": "appimage",
+      "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-linux-aarch64.AppImage",
+      "sha256": "bee3a7f8d720869df9f9276b3df2f8e7f54e8b9e961ab296665f24a7078b6d48",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/effectcraft",
         "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-linux-aarch64\\.AppImage$"
@@ -53,6 +63,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-windows-x64-portable.zip",
+      "sha256": "142d7c76400658edc192625464deadedc83e9bc11635d72c31660cb557881e91",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/effectcraft",
         "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-x64-portable\\.zip$"
@@ -66,6 +79,9 @@
       ],
       "kind": "download",
       "format": "archive",
+      "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-windows-arm64-portable.zip",
+      "sha256": "1a57e8eaf828b8fd3afd9114697da09bc111bb025ac594add11f3496db187e09",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/effectcraft",
         "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-arm64-portable\\.zip$"
@@ -79,6 +95,9 @@
       ],
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-windows-x64.msi",
+      "sha256": "dc9905b586734960078d749a7c6c27b055d3bf31d76c1e44d3af961c6340735f",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/effectcraft",
         "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-windows-x64\\.msi$"
@@ -88,6 +107,9 @@
       "platform": "macos",
       "kind": "download",
       "format": "installer",
+      "url": "https://github.com/storytold/effectcraft/releases/download/v0.18.0/effectcraft-0.18.0-macos-universal.dmg",
+      "sha256": "79a0c24a644018eb39b722eddb5a15a34280c86856171f6a6415a3541b182004",
+      "version": "v0.18.0",
       "github": {
         "repo": "storytold/effectcraft",
         "asset": "^effectcraft-[0-9][0-9A-Za-z.+-]*-macos-universal\\.dmg$"

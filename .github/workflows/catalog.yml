@@ -4,7 +4,8 @@ on:
     branches: [main]
   pull_request:
   schedule:
-    - cron: "17 4 * * 1"   # weekly: catch packages renamed or removed upstream
+    - cron: "17 4 * * 1"   # weekly: catch packages renamed or removed upstream, and pins behind upstream
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
@@ -20,13 +21,38 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/build_index.py --check-remote --enrich
-      - name: Publish index.json
+      - name: Report pins behind the latest upstream release
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/pin.py --check || echo "::warning::pins are behind upstream; run scripts/pin.py and open a pull request"
+      - name: Sign index.json
+        if: github.event_name != 'pull_request'
+        env:
+          CATALOG_SIGNING_KEY: ${{ secrets.CATALOG_SIGNING_KEY }}
+        run: |
+          if git diff --quiet index.json && [ -f index.json.minisig ]; then
+            echo "index.json unchanged, keeping its signature"
+          else
+            if [ -z "$CATALOG_SIGNING_KEY" ]; then
+              echo "::error::CATALOG_SIGNING_KEY secret is not set; refusing to publish an unsigned index.json"
+              exit 1
+            fi
+            python scripts/sign_index.py sign index.json
+          fi
+      - name: Verify the signature (reference minisign tool and our own verifier)
+        if: github.event_name != 'pull_request'
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q minisign
+          minisign -Vm index.json -p keys/pezzotto-launcher-catalog.pub
+          python scripts/sign_index.py verify --pub keys/pezzotto-launcher-catalog.pub index.json
+      - name: Publish index.json and its signature
         if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.json
+          git add index.json index.json.minisig
           if ! git diff --cached --quiet; then
-            git commit -m "Rebuild index.json"
+            git commit -m "Rebuild and sign index.json"
             git push
           fi
