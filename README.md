@@ -2,7 +2,7 @@
 
 The catalog of open-source applications installed by the
 [pezzotto.ai launcher](https://github.com/pezzottoai/launcher), including the open-source
-knock-offs of closed-source apps curated at [pezzotto.ai](https://pezzottoai.github.io). Each application is one JSON file in
+knock-offs of closed-source apps curated at [pezzotto.ai](https://pezzotto.ai). Each application is one JSON file in
 `apps/`; topics live in `topics.json`. CI validates every file and publishes the merged
 `index.json`, which is what the launcher downloads:
 
