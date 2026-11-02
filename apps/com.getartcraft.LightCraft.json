@@ -20,6 +20,27 @@
     "catalog",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "lightcraft",
+    "of": "Adobe Lightroom Classic",
+    "original": "https://www.adobe.com/products/photoshop-lightroom-classic.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "non-destructive library",
+      "raw development",
+      "MCP server",
+      "web (WASM)"
+    ],
+    "missing": [
+      "cloud sync",
+      "mobile",
+      "AI masking parity",
+      "plugin ecosystem"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

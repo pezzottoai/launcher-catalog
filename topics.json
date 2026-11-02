@@ -42,6 +42,11 @@
       "description": "Passwords, encryption"
     },
     {
+      "id": "internet",
+      "name": "Internet",
+      "description": "Browsers, mail, chat"
+    },
+    {
       "id": "development",
       "name": "Development",
       "description": "Editors and tools for programmers"

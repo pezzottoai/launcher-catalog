@@ -1,0 +1,103 @@
+{
+  "$schema": "../schema/app.schema.json",
+  "schema_version": 1,
+  "id": "com.ingmmo.Chord",
+  "name": "Chord",
+  "summary": "An open-source browser inspired by Arc",
+  "description": "Chord is a Chromium browser built on Electron with the Arc vocabulary in place: a sidebar with Spaces, Favorites, Pinned and Today tabs, auto-archiving, a command bar instead of a URL bar, split view, Little windows, profiles per Space, boosts and built-in ad and tracker blocking. Chrome extensions work.\n\nA chord is the straight line between two points on an arc.",
+  "developer": "Marco Montanari",
+  "license": "MIT",
+  "homepage": "https://ingmmo.com/chord/",
+  "source_code": "https://github.com/sirmmo/chord",
+  "icon": "https://raw.githubusercontent.com/sirmmo/chord/main/build/icon.png",
+  "topics": [
+    "internet"
+  ],
+  "tags": [
+    "browser",
+    "arc",
+    "spaces",
+    "tabs",
+    "electron",
+    "chromium"
+  ],
+  "pezzotto": {
+    "entry": "chord",
+    "of": "Arc (The Browser Company)",
+    "original": "https://arc.net",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "sidebar with Spaces, Favorites, Pinned and Today tabs",
+      "auto-archiving",
+      "command bar instead of URL bar",
+      "split view with custom layouts",
+      "Little windows and sidebar peek",
+      "profiles per space",
+      "Air Traffic Control link routing",
+      "boosts",
+      "picture-in-picture",
+      "downloads, history, passwords and passkeys",
+      "ad and tracker blocking, encrypted DNS, GPC",
+      "Chrome extensions",
+      "Research and AI modes (WebMCP)",
+      "auto-update"
+    ],
+    "missing": [
+      "signed and notarised macOS/Windows builds",
+      "cross-device sync",
+      "mobile companion (Arc Search)",
+      "Arc Max AI features"
+    ]
+  },
+  "certified": {
+    "level": "pinned",
+    "date": "2026-11-02"
+  },
+  "installers": [
+    {
+      "platform": "linux",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "appimage",
+      "url": "https://github.com/sirmmo/chord/releases/download/v0.45.0/Chord-0.45.0-linux-x86_64.AppImage",
+      "sha256": "0f5a349059bce7a0deb52d32ee4fa4337b1c1181712c46d2cf0f6e9b80b4c28f",
+      "version": "v0.45.0",
+      "github": {
+        "repo": "sirmmo/chord",
+        "asset": "^Chord-[0-9.]+-linux-x86_64\\.AppImage$"
+      }
+    },
+    {
+      "platform": "windows",
+      "arch": [
+        "x86_64"
+      ],
+      "kind": "download",
+      "format": "installer",
+      "url": "https://github.com/sirmmo/chord/releases/download/v0.45.0/Chord-0.45.0-win-x64-setup.exe",
+      "sha256": "2a8add660f119d6ba5048fb19fec378d6627d5ae65e7ec88b3d2c13ad4543280",
+      "version": "v0.45.0",
+      "github": {
+        "repo": "sirmmo/chord",
+        "asset": "^Chord-[0-9.]+-win-x64-setup\\.exe$"
+      }
+    },
+    {
+      "platform": "macos",
+      "kind": "download",
+      "format": "installer",
+      "url": "https://github.com/sirmmo/chord/releases/download/v0.45.0/Chord-0.45.0-mac-universal.dmg",
+      "sha256": "4773f1657337f091bb19f37a4fa8ba095ddab311d72fe5f3b2c03f7526bd8f00",
+      "version": "v0.45.0",
+      "github": {
+        "repo": "sirmmo/chord",
+        "asset": "^Chord-[0-9.]+-mac-universal\\.dmg$"
+      }
+    }
+  ]
+}

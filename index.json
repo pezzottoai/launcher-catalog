@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated": "2026-10-30T15:29:36Z",
+ "generated": "2026-11-02T12:03:20Z",
  "topics": [
   {
    "id": "graphics",
@@ -41,6 +41,11 @@
    "id": "security",
    "name": "Security & Privacy",
    "description": "Passwords, encryption"
+  },
+  {
+   "id": "internet",
+   "name": "Internet",
+   "description": "Browsers, mail, chat"
   },
   {
    "id": "development",
@@ -425,6 +430,108 @@
   },
   {
    "schema_version": 1,
+   "id": "com.ingmmo.Chord",
+   "name": "Chord",
+   "summary": "An open-source browser inspired by Arc",
+   "description": "Chord is a Chromium browser built on Electron with the Arc vocabulary in place: a sidebar with Spaces, Favorites, Pinned and Today tabs, auto-archiving, a command bar instead of a URL bar, split view, Little windows, profiles per Space, boosts and built-in ad and tracker blocking. Chrome extensions work.\n\nA chord is the straight line between two points on an arc.",
+   "developer": "Marco Montanari",
+   "license": "MIT",
+   "homepage": "https://ingmmo.com/chord/",
+   "source_code": "https://github.com/sirmmo/chord",
+   "icon": "https://raw.githubusercontent.com/sirmmo/chord/main/build/icon.png",
+   "topics": [
+    "internet"
+   ],
+   "tags": [
+    "browser",
+    "arc",
+    "spaces",
+    "tabs",
+    "electron",
+    "chromium"
+   ],
+   "pezzotto": {
+    "entry": "chord",
+    "of": "Arc (The Browser Company)",
+    "original": "https://arc.net",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "sidebar with Spaces, Favorites, Pinned and Today tabs",
+     "auto-archiving",
+     "command bar instead of URL bar",
+     "split view with custom layouts",
+     "Little windows and sidebar peek",
+     "profiles per space",
+     "Air Traffic Control link routing",
+     "boosts",
+     "picture-in-picture",
+     "downloads, history, passwords and passkeys",
+     "ad and tracker blocking, encrypted DNS, GPC",
+     "Chrome extensions",
+     "Research and AI modes (WebMCP)",
+     "auto-update"
+    ],
+    "missing": [
+     "signed and notarised macOS/Windows builds",
+     "cross-device sync",
+     "mobile companion (Arc Search)",
+     "Arc Max AI features"
+    ]
+   },
+   "certified": {
+    "level": "pinned",
+    "date": "2026-11-02"
+   },
+   "installers": [
+    {
+     "platform": "linux",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "appimage",
+     "url": "https://github.com/sirmmo/chord/releases/download/v0.45.0/Chord-0.45.0-linux-x86_64.AppImage",
+     "sha256": "0f5a349059bce7a0deb52d32ee4fa4337b1c1181712c46d2cf0f6e9b80b4c28f",
+     "version": "v0.45.0",
+     "github": {
+      "repo": "sirmmo/chord",
+      "asset": "^Chord-[0-9.]+-linux-x86_64\\.AppImage$"
+     }
+    },
+    {
+     "platform": "windows",
+     "arch": [
+      "x86_64"
+     ],
+     "kind": "download",
+     "format": "installer",
+     "url": "https://github.com/sirmmo/chord/releases/download/v0.45.0/Chord-0.45.0-win-x64-setup.exe",
+     "sha256": "2a8add660f119d6ba5048fb19fec378d6627d5ae65e7ec88b3d2c13ad4543280",
+     "version": "v0.45.0",
+     "github": {
+      "repo": "sirmmo/chord",
+      "asset": "^Chord-[0-9.]+-win-x64-setup\\.exe$"
+     }
+    },
+    {
+     "platform": "macos",
+     "kind": "download",
+     "format": "installer",
+     "url": "https://github.com/sirmmo/chord/releases/download/v0.45.0/Chord-0.45.0-mac-universal.dmg",
+     "sha256": "4773f1657337f091bb19f37a4fa8ba095ddab311d72fe5f3b2c03f7526bd8f00",
+     "version": "v0.45.0",
+     "github": {
+      "repo": "sirmmo/chord",
+      "asset": "^Chord-[0-9.]+-mac-universal\\.dmg$"
+     }
+    }
+   ]
+  },
+  {
+   "schema_version": 1,
    "id": "com.getartcraft.DeckCraft",
    "name": "DeckCraft",
    "summary": "Presentations and slide shows",
@@ -444,6 +551,33 @@
     "pptx",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "deckcraft",
+    "of": "Microsoft PowerPoint",
+    "original": "https://www.microsoft.com/microsoft-365/powerpoint",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "masters, layouts, themes",
+     "150+ shapes, connectors, merge shapes",
+     "pictures, tables, charts, SmartArt basics",
+     "audio/video",
+     "transitions incl. Morph",
+     "animations and motion paths",
+     "presenter view, pen, rehearse timings",
+     "pptx open/save",
+     "PDF/PNG/GIF export",
+     "200+ commands, CLI, MCP"
+    ],
+    "missing": [
+     "legacy .ppt",
+     "Designer-style AI layouts",
+     "co-authoring",
+     "add-ins"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -562,6 +696,33 @@
     "print",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "designcraft",
+    "of": "Adobe InDesign",
+    "original": "https://www.adobe.com/products/indesign.html",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "spreads, parent/master pages",
+     "threaded text frames",
+     "paragraph and character styles",
+     "Knuth-Plass composer, hyphenation, optical margins",
+     "tables, text wrap, baseline grid",
+     "IDML import/export",
+     "INDD import (indd-utils)",
+     "PDF/X-4, PDF/A-2b, EPUB, PNG, editable pptx export",
+     "JSON control channel and MCP",
+     "web (WASM)"
+    ],
+    "missing": [
+     "INDD export",
+     "InCopy-style workflows",
+     "plugin ecosystem",
+     "Publish Online"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -680,6 +841,31 @@
     "compositing",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "effectcraft",
+    "of": "Adobe After Effects",
+    "original": "https://www.adobe.com/products/aftereffects.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "compositions and layers",
+     "keyframes",
+     "308 effects",
+     "layer styles",
+     "expressions",
+     "3D cameras and lights",
+     "render queue",
+     "web (WASM)"
+    ],
+    "missing": [
+     ".aep import",
+     "third-party plugin hosting",
+     "Cinema 4D renderer",
+     "Dynamic Link"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -915,6 +1101,32 @@
     "nle",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "filmcraft",
+    "of": "Adobe Premiere Pro",
+    "original": "https://www.adobe.com/products/premiere.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "editing and trimming",
+     "multicam",
+     "colour",
+     "keyframes and effects",
+     "titles and captions",
+     "audio mixing",
+     "hardware decode (macOS/Windows, partial Linux)",
+     "FCP7 XML / AAF / OTIO interchange",
+     "H.264/H.265 export"
+    ],
+    "missing": [
+     ".prproj import",
+     "VST3/AU/OpenFX plugins",
+     "GPU colour grading and export",
+     "broad delivery codecs"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -1109,6 +1321,32 @@
     "xlsx",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "gridcraft",
+    "of": "Microsoft Excel",
+    "original": "https://www.microsoft.com/microsoft-365/excel",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "ribbon",
+     "513 worksheet functions",
+     "tables and conditional formatting",
+     "sparklines",
+     "charts",
+     "xlsx read/write",
+     "CLI, JSON control channel, MCP",
+     "web (WASM)",
+     "plugins (Python, R, .NET, VBA via sister repos)"
+    ],
+    "missing": [
+     ".xls import",
+     "xlsx fidelity on real-world files",
+     "very large workbooks / multithreaded recalc",
+     "chart depth"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -1430,6 +1668,27 @@
     "catalog",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "lightcraft",
+    "of": "Adobe Lightroom Classic",
+    "original": "https://www.adobe.com/products/photoshop-lightroom-classic.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "non-destructive library",
+     "raw development",
+     "MCP server",
+     "web (WASM)"
+    ],
+    "missing": [
+     "cloud sync",
+     "mobile",
+     "AI masking parity",
+     "plugin ecosystem"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -1546,6 +1805,29 @@
     "documents",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "pdfcraft",
+    "of": "Adobe Acrobat",
+    "original": "https://www.adobe.com/acrobat.html",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "reader",
+     "organize pages",
+     "combine and split",
+     "security",
+     "threaded comments",
+     "web (WASM)"
+    ],
+    "missing": [
+     "forms authoring parity",
+     "redaction workflows",
+     "e-signature services",
+     "OCR"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -1663,6 +1945,31 @@
     "raster",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "photocraft",
+    "of": "Adobe Photoshop",
+    "original": "https://www.adobe.com/products/photoshop.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "layers and masks",
+     "adjustment layers",
+     "layer styles",
+     "type",
+     "vectors",
+     "brushes",
+     "PSD read/write",
+     "web (WASM)"
+    ],
+    "missing": [
+     "generative/AI fills",
+     "camera raw parity",
+     "3D",
+     "plugin ecosystem"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -1822,6 +2129,35 @@
     "vector",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "rustgis",
+    "of": "ArcGIS Pro (Esri)",
+    "original": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "ribbon (Home/Data/Style/Edit/Analyze/View/Publish)",
+     "layers and browser panes",
+     "attribute table",
+     "symbology",
+     "GeoTIFF/COG rasters",
+     "3D globe and projections",
+     "1,000+ GeoLibre/Whitebox tools",
+     "web app (WASM)",
+     "CLI and scripting",
+     "AI assistant",
+     "WASM plugin registry",
+     "PyPI package"
+    ],
+    "missing": [
+     "geodatabase (.gdb) editing",
+     "ArcGIS Online / Enterprise integration",
+     "ModelBuilder-style visual models",
+     "layouts and map series parity"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -2108,6 +2444,32 @@
     "illustration",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "vectorcraft",
+    "of": "Adobe Illustrator",
+    "original": "https://www.adobe.com/products/illustrator.html",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "drawing and path tools",
+     "Pathfinder and Shape Builder",
+     "gradients, appearance, transparency",
+     "type with styles, threading, bidi",
+     "SVG, PDF, PDF-compatible .ai, legacy .ai v7, EPS, DXF, EMF/WMF",
+     "PSD in/out",
+     "Affinity document import",
+     "Print, Package",
+     "MCP server",
+     "web (WASM)"
+    ],
+    "missing": [
+     "modern native .ai internals beyond PDF stream",
+     "plugin ecosystem",
+     "cloud libraries"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"
@@ -2239,7 +2601,7 @@
      "cask": true
     }
    ],
-   "icon": "https://dl.flathub.org/media/org/videolan/VLC/34e7c2b6a026c5c290606225a84582d3/icons/128x128/org.videolan.VLC.png",
+   "icon": "https://dl.flathub.org/media/org/videolan/VLC/0e71024f872bdd57a2907a775cca0e6c/icons/128x128/org.videolan.VLC.png",
    "description": "VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols."
   },
   {
@@ -2322,6 +2684,34 @@
     "documents",
     "rust"
    ],
+   "pezzotto": {
+    "entry": "wordcraft",
+    "of": "Microsoft Word",
+    "original": "https://www.microsoft.com/microsoft-365/word",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+     "ribbon and styles",
+     "docx read/write",
+     "tables",
+     "track changes",
+     "references (TOC, footnotes)",
+     "mail merge",
+     "headers/footers, sections, columns",
+     "pictures and shapes with text wrap",
+     "IME, AutoCorrect, find/replace",
+     "CLI and MCP",
+     "web (WASM)"
+    ],
+    "missing": [
+     "legacy .doc",
+     "co-authoring (in sister repo craft-collab)",
+     "VBA/macros",
+     "full equation editor parity"
+    ]
+   },
    "certified": {
     "level": "pinned",
     "date": "2026-10-30"

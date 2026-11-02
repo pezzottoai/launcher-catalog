@@ -26,6 +26,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/pin.py --check || echo "::warning::pins are behind upstream; run scripts/pin.py and open a pull request"
+      - name: Report manifests out of step with the pezzotto.ai stall
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python scripts/pezzotto_sync.py --check || echo "::warning::the stall changed its verdict; run scripts/pezzotto_sync.py and open a pull request"
       - name: Sign index.json
         if: github.event_name != 'pull_request'
         env:

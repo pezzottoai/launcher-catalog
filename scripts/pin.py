@@ -29,7 +29,7 @@ import urllib.request
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 INSTALLER_ORDER = ["platform", "arch", "kind", "format", "url", "sha256", "version", "github", "exec", "strip_root", "run"]
 APP_ORDER = ["$schema", "schema_version", "id", "name", "summary", "description", "developer", "license",
-             "homepage", "source_code", "icon", "screenshots", "topics", "tags", "certified", "installers"]
+             "homepage", "source_code", "icon", "screenshots", "topics", "tags", "pezzotto", "certified", "installers"]
 _releases = {}
 
 

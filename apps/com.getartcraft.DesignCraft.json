@@ -21,6 +21,33 @@
     "print",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "designcraft",
+    "of": "Adobe InDesign",
+    "original": "https://www.adobe.com/products/indesign.html",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "spreads, parent/master pages",
+      "threaded text frames",
+      "paragraph and character styles",
+      "Knuth-Plass composer, hyphenation, optical margins",
+      "tables, text wrap, baseline grid",
+      "IDML import/export",
+      "INDD import (indd-utils)",
+      "PDF/X-4, PDF/A-2b, EPUB, PNG, editable pptx export",
+      "JSON control channel and MCP",
+      "web (WASM)"
+    ],
+    "missing": [
+      "INDD export",
+      "InCopy-style workflows",
+      "plugin ecosystem",
+      "Publish Online"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

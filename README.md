@@ -50,6 +50,7 @@ Full definition: [`schema/app.schema.json`](schema/app.schema.json) (JSON Schema
 
 - `id`: reverse-DNS. Reuse the AppStream/Flathub id when there is one. The file is `apps/<id>.json`.
 - `topics`: ids from `topics.json`; the first is the primary topic.
+- `pezzotto`: present when the app is a knock-off listed on pezzotto.ai; written by `scripts/pezzotto_sync.py` (below).
 - `installers`: in order of preference. The launcher uses the first entry matching the user's
   platform and architecture whose tool (flatpak, winget, brew) is present.
 
@@ -68,6 +69,34 @@ default `true`), `installer` (`.msi`/`.exe`/`.dmg`/`.pkg`/`.deb`, opened with th
 
 Any installer may set `run`: the argv used by the Launch button. `{dir}` expands to the install
 directory of a `download` installer.
+
+### Knock-offs and `pezzotto`
+
+An app that imitates a closed-source original is a pezzotto, and the stall at
+[pezzotto.ai](https://pezzotto.ai) is where it gets graded. `scripts/pezzotto_sync.py` copies
+that verdict into the manifest, matching the site's `catalog/clones.json` to the apps here by
+source repository:
+
+```json
+"pezzotto": {
+  "entry": "rustgis",
+  "of": "ArcGIS Pro (Esri)",
+  "original": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview",
+  "grade": "B",
+  "verified": "desk",
+  "status": "alive",
+  "checked": "2026-10-30",
+  "coverage": ["ribbon (Home/Data/Style/Edit/Analyze/View/Publish)", "…"],
+  "missing": ["geodatabase (.gdb) editing", "…"]
+}
+```
+
+The launcher shows all of it: what the app is a knock-off of, the grade (A: fools you at arm's
+length, B: from three metres, C: from across the street, D: you'd have to be told), whether
+anyone at the stall actually ran it (`verified`: `run`) or graded it from docs and screenshots
+(`desk`), and what the original has that the clone lacks. The block is never edited by hand:
+to change a grade, change the stall's entry and rerun the script. CI reports drift on its
+weekly run.
 
 ### Pinned releases and `certified`
 
@@ -108,10 +137,11 @@ secret, and ship a launcher release with the new `CATALOG_PUBLIC_KEY`.
 ## Adding an application
 
 1. Copy an existing file in `apps/` to `apps/<id>.json` and edit it.
-2. Pin its downloads, then check it:
+2. Pin its downloads, pull in the stall's verdict if it is a knock-off, then check it:
    ```sh
    pip install jsonschema
    python scripts/pin.py <id>
+   python scripts/pezzotto_sync.py
    python scripts/build_index.py --check-remote --enrich
    ```
 3. Open a pull request. Don't commit `index.json` or `index.json.minisig`; CI rebuilds and signs them.

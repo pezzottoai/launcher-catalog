@@ -20,6 +20,32 @@
     "nle",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "filmcraft",
+    "of": "Adobe Premiere Pro",
+    "original": "https://www.adobe.com/products/premiere.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "editing and trimming",
+      "multicam",
+      "colour",
+      "keyframes and effects",
+      "titles and captions",
+      "audio mixing",
+      "hardware decode (macOS/Windows, partial Linux)",
+      "FCP7 XML / AAF / OTIO interchange",
+      "H.264/H.265 export"
+    ],
+    "missing": [
+      ".prproj import",
+      "VST3/AU/OpenFX plugins",
+      "GPU colour grading and export",
+      "broad delivery codecs"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

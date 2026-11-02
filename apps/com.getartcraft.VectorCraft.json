@@ -20,6 +20,32 @@
     "illustration",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "vectorcraft",
+    "of": "Adobe Illustrator",
+    "original": "https://www.adobe.com/products/illustrator.html",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "drawing and path tools",
+      "Pathfinder and Shape Builder",
+      "gradients, appearance, transparency",
+      "type with styles, threading, bidi",
+      "SVG, PDF, PDF-compatible .ai, legacy .ai v7, EPS, DXF, EMF/WMF",
+      "PSD in/out",
+      "Affinity document import",
+      "Print, Package",
+      "MCP server",
+      "web (WASM)"
+    ],
+    "missing": [
+      "modern native .ai internals beyond PDF stream",
+      "plugin ecosystem",
+      "cloud libraries"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

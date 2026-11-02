@@ -21,6 +21,31 @@
     "compositing",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "effectcraft",
+    "of": "Adobe After Effects",
+    "original": "https://www.adobe.com/products/aftereffects.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "compositions and layers",
+      "keyframes",
+      "308 effects",
+      "layer styles",
+      "expressions",
+      "3D cameras and lights",
+      "render queue",
+      "web (WASM)"
+    ],
+    "missing": [
+      ".aep import",
+      "third-party plugin hosting",
+      "Cinema 4D renderer",
+      "Dynamic Link"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

@@ -21,6 +21,32 @@
     "xlsx",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "gridcraft",
+    "of": "Microsoft Excel",
+    "original": "https://www.microsoft.com/microsoft-365/excel",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "ribbon",
+      "513 worksheet functions",
+      "tables and conditional formatting",
+      "sparklines",
+      "charts",
+      "xlsx read/write",
+      "CLI, JSON control channel, MCP",
+      "web (WASM)",
+      "plugins (Python, R, .NET, VBA via sister repos)"
+    ],
+    "missing": [
+      ".xls import",
+      "xlsx fidelity on real-world files",
+      "very large workbooks / multithreaded recalc",
+      "chart depth"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

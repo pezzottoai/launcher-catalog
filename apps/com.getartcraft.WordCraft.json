@@ -20,6 +20,34 @@
     "documents",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "wordcraft",
+    "of": "Microsoft Word",
+    "original": "https://www.microsoft.com/microsoft-365/word",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "ribbon and styles",
+      "docx read/write",
+      "tables",
+      "track changes",
+      "references (TOC, footnotes)",
+      "mail merge",
+      "headers/footers, sections, columns",
+      "pictures and shapes with text wrap",
+      "IME, AutoCorrect, find/replace",
+      "CLI and MCP",
+      "web (WASM)"
+    ],
+    "missing": [
+      "legacy .doc",
+      "co-authoring (in sister repo craft-collab)",
+      "VBA/macros",
+      "full equation editor parity"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

@@ -22,6 +22,35 @@
     "vector",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "rustgis",
+    "of": "ArcGIS Pro (Esri)",
+    "original": "https://www.esri.com/en-us/arcgis/products/arcgis-pro/overview",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "ribbon (Home/Data/Style/Edit/Analyze/View/Publish)",
+      "layers and browser panes",
+      "attribute table",
+      "symbology",
+      "GeoTIFF/COG rasters",
+      "3D globe and projections",
+      "1,000+ GeoLibre/Whitebox tools",
+      "web app (WASM)",
+      "CLI and scripting",
+      "AI assistant",
+      "WASM plugin registry",
+      "PyPI package"
+    ],
+    "missing": [
+      "geodatabase (.gdb) editing",
+      "ArcGIS Online / Enterprise integration",
+      "ModelBuilder-style visual models",
+      "layouts and map series parity"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

@@ -20,6 +20,31 @@
     "raster",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "photocraft",
+    "of": "Adobe Photoshop",
+    "original": "https://www.adobe.com/products/photoshop.html",
+    "grade": "C",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "layers and masks",
+      "adjustment layers",
+      "layer styles",
+      "type",
+      "vectors",
+      "brushes",
+      "PSD read/write",
+      "web (WASM)"
+    ],
+    "missing": [
+      "generative/AI fills",
+      "camera raw parity",
+      "3D",
+      "plugin ecosystem"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

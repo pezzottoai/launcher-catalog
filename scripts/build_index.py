@@ -38,6 +38,9 @@ def builtin_checks(app, fname, topic_ids):
     for t in app.get("topics", []):
         if t not in topic_ids:
             errs.append(f"unknown topic '{t}'")
+    pz = app.get("pezzotto")
+    if pz and pz.get("original") and pz["original"].rstrip("/") == app.get("homepage", "").rstrip("/"):
+        errs.append("pezzotto.original points at the clone's own homepage")
     for i, inst in enumerate(app.get("installers", [])):
         where = f"installers[{i}]"
         if inst.get("platform") not in PLATFORMS:

@@ -20,6 +20,33 @@
     "pptx",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "deckcraft",
+    "of": "Microsoft PowerPoint",
+    "original": "https://www.microsoft.com/microsoft-365/powerpoint",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "masters, layouts, themes",
+      "150+ shapes, connectors, merge shapes",
+      "pictures, tables, charts, SmartArt basics",
+      "audio/video",
+      "transitions incl. Morph",
+      "animations and motion paths",
+      "presenter view, pen, rehearse timings",
+      "pptx open/save",
+      "PDF/PNG/GIF export",
+      "200+ commands, CLI, MCP"
+    ],
+    "missing": [
+      "legacy .ppt",
+      "Designer-style AI layouts",
+      "co-authoring",
+      "add-ins"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"

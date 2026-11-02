@@ -45,6 +45,23 @@
         "date": { "description": "When the pins were last refreshed.", "type": "string", "format": "date" }
       }
     },
+    "pezzotto": {
+      "description": "Present when the app is a knock-off of a closed-source original listed on pezzotto.ai. Written by scripts/pezzotto_sync.py from the site's catalog/clones.json; do not edit by hand.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entry", "of", "grade", "verified"],
+      "properties": {
+        "entry": { "description": "Id of the entry in the pezzotto.ai clone catalog. Its page is https://pezzotto.ai/#clone-<entry>.", "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "of": { "description": "The closed-source original this app imitates.", "type": "string", "minLength": 1 },
+        "original": { "description": "Home of the original.", "type": "string", "format": "uri", "pattern": "^https://" },
+        "grade": { "description": "pezzotto grade: from how far away does it still fool you? A: arm's length, B: three metres, C: across the street, D: you'd have to be told.", "enum": ["A", "B", "C", "D"] },
+        "verified": { "description": "run: someone from the stall ran the clone; desk: graded from docs, screenshots and the project's own parity claims.", "enum": ["desk", "run"] },
+        "status": { "description": "alive: commits in the last 90 days; stale: 90 days to a year; abandoned: longer.", "enum": ["alive", "stale", "abandoned"] },
+        "checked": { "description": "When the stall last looked at the clone.", "type": "string", "format": "date" },
+        "coverage": { "description": "Features of the original the clone has.", "type": "array", "items": { "type": "string" } },
+        "missing": { "description": "Features of the original the clone lacks.", "type": "array", "items": { "type": "string" } }
+      }
+    },
     "installers": {
       "description": "Ways to install the app, in order of preference. The launcher picks the first one that matches the current platform/arch and whose tool is available.",
       "type": "array",

@@ -19,6 +19,29 @@
     "documents",
     "rust"
   ],
+  "pezzotto": {
+    "entry": "pdfcraft",
+    "of": "Adobe Acrobat",
+    "original": "https://www.adobe.com/acrobat.html",
+    "grade": "B",
+    "verified": "desk",
+    "status": "alive",
+    "checked": "2026-10-30",
+    "coverage": [
+      "reader",
+      "organize pages",
+      "combine and split",
+      "security",
+      "threaded comments",
+      "web (WASM)"
+    ],
+    "missing": [
+      "forms authoring parity",
+      "redaction workflows",
+      "e-signature services",
+      "OCR"
+    ]
+  },
   "certified": {
     "level": "pinned",
     "date": "2026-10-30"
